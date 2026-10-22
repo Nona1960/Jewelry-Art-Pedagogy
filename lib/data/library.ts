@@ -1,4 +1,5 @@
 import { teaching, type BibEntry } from "./bibliography";
+import { MANUALS } from "./manuals";
 
 export type LibType =
   | "Учебное пособие"
@@ -32,6 +33,8 @@ export interface LibItem {
   annotation?: string;
   contents?: string[];
   file?: string;
+  /** Страница с полным текстом на сайте */
+  href?: string;
 }
 
 function detectType(b: BibEntry): LibType {
@@ -62,7 +65,23 @@ function detectLevel(b: BibEntry): string {
   return "—";
 }
 
-export const library: LibItem[] = teaching.map((b) => ({
+const manualItems: LibItem[] = MANUALS.map((m, k) => ({
+  id: `manual-${m.slug}`,
+  n: 1000 + k,
+  title: m.subtitle ? `${m.title}. ${m.subtitle.replace(/^Учебное пособие\.\s*/, "")}` : m.title,
+  author: "Дмитрий Дронов",
+  coauthors: "",
+  type: m.type,
+  theme: m.theme as LibTheme,
+  level: m.level,
+  yearCreated: m.year,
+  yearUpdated: null,
+  source: m.editor ? `Общая редакция: ${m.editor.split(" — ")[0]}` : "",
+  annotation: m.annotation.join(" "),
+  href: `/biblioteka/posobiya/${m.slug}`,
+}));
+
+const programItems: LibItem[] = teaching.map((b) => ({
   id: `lib-${b.n}`,
   n: b.n,
   title: b.title,
@@ -75,6 +94,8 @@ export const library: LibItem[] = teaching.map((b) => ({
   yearUpdated: null,
   source: b.source,
 }));
+
+export const library: LibItem[] = [...manualItems, ...programItems];
 
 export const LIB_TYPES: LibType[] = [
   "Учебное пособие",

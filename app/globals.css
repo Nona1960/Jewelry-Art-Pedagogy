@@ -78,3 +78,105 @@ p {
     @apply mb-5;
   }
 }
+
+/* Полный текст учебных пособий (HTML из Word) */
+.doc-html {
+  font-size: 17px;
+  line-height: 1.8;
+  color: rgb(62 83 114 / 0.95);
+  overflow-wrap: anywhere;
+}
+.doc-html h2 {
+  margin: 3.5rem 0 1.5rem;
+  font-size: 34px;
+  scroll-margin-top: 7rem;
+}
+.doc-html h2:first-child {
+  margin-top: 0;
+}
+.doc-html h3 {
+  margin: 2.5rem 0 1rem;
+  font-size: 26px;
+  scroll-margin-top: 7rem;
+}
+.doc-html h4 {
+  margin: 2rem 0 0.75rem;
+  font-family: "PT Serif", Georgia, serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8e7646;
+  scroll-margin-top: 7rem;
+}
+.doc-html p {
+  margin-bottom: 1.1rem;
+  hyphens: auto;
+}
+@media (min-width: 640px) {
+  .doc-html p {
+    text-align: justify;
+  }
+}
+.doc-html ul,
+.doc-html ol {
+  margin: 0 0 1.2rem 1.4rem;
+}
+.doc-html ul {
+  list-style: disc;
+}
+.doc-html ol {
+  list-style: decimal;
+}
+.doc-html li {
+  margin-bottom: 0.35rem;
+  padding-left: 0.2rem;
+}
+.doc-html li::marker {
+  color: #b49a65;
+}
+.doc-html img {
+  display: block;
+  max-width: 100%;
+  max-height: 34rem;
+  width: auto;
+  height: auto;
+  margin: 1.8rem auto;
+  border: 1px solid #e4dccb;
+  background: #fff;
+}
+.doc-html a {
+  text-decoration: underline;
+  text-decoration-color: rgb(180 154 101 / 0.6);
+  text-underline-offset: 3px;
+}
+.doc-html .table-wrap {
+  margin: 1.5rem 0 2rem;
+  overflow-x: auto;
+  border: 1px solid #e4dccb;
+  background: #fff;
+}
+.doc-html table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: center;
+}
+.doc-html th,
+.doc-html td {
+  border: 1px solid #e4dccb;
+  padding: 0.45rem 0.6rem;
+  vertical-align: middle;
+}
+.doc-html th,
+.doc-html tr:first-child td {
+  background: rgb(233 217 184 / 0.45);
+  font-weight: 700;
+  color: #3e5372;
+}
+.doc-html td p,
+.doc-html th p {
+  margin: 0;
+  text-align: inherit;
+}

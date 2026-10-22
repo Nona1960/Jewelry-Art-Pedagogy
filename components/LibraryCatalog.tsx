@@ -171,9 +171,13 @@ function LibCard({ item: i }: { item: LibItem }) {
         <summary className="flex cursor-pointer list-none flex-col gap-3 p-5 sm:flex-row sm:items-start sm:justify-between sm:p-6 [&::-webkit-details-marker]:hidden">
           <div className="min-w-0">
             <p className="eyebrow">
-              {i.type} · {i.level}
+              {i.type}
+              {i.level !== "—" ? ` · ${i.level}` : ""}
             </p>
             <h3 className="mt-2 text-[26px] leading-snug group-hover:text-gold-deep">{i.title}</h3>
+            {i.href && (
+              <p className="mt-1 text-[13px] uppercase tracking-[0.15em] text-gold-deep">Полный текст на сайте</p>
+            )}
             <p className="mt-1 text-[15px] text-ink">
               {i.author}
               {i.coauthors ? `; ${i.coauthors}` : ""}
@@ -215,7 +219,11 @@ function LibCard({ item: i }: { item: LibItem }) {
             </dd>
             <dt className="text-[12px] uppercase tracking-[0.15em] text-gold-deep">Электронная версия</dt>
             <dd>
-              {i.file ? (
+              {i.href ? (
+                <a href={i.href} className="btn mt-1 px-4 py-2">
+                  Читать полный текст
+                </a>
+              ) : i.file ? (
                 <a href={i.file} className="btn mt-1 px-4 py-2" target="_blank" rel="noopener">
                   Открыть PDF
                 </a>
