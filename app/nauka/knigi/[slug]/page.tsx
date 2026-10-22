@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { abs, pageMeta, PERSON_LD } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 import { notFound } from "next/navigation";
 import DocumentPage from "@/components/DocumentPage";
 import { BOOKS, bookRows, getBook } from "@/lib/data/books";
@@ -13,11 +15,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const b = getBook(slug);
   if (!b) return {};
-  return {
-    title: `${b.kind}: ${b.title}`,
-    description: `${b.author}. ${b.title}. ${b.kind}. ${b.city}, ${b.year}. Полный текст.`,
-    openGraph: { images: [{ url: b.cover.src, width: b.cover.width, height: b.cover.height }] },
-  };
+  return pageMeta({
+    title: `${b.title} (${b.year})`,
+    description: `${b.author}. ${b.title}. ${b.kind}. ${b.city}, ${b.year}. ${b.annotation[0]}`,
+    path: `/nauka/knigi/${b.slug}`,
+    image: { url: b.cover.src, width: b.cover.width, height: b.cover.height, alt: `Обложка книги «${b.title}»` },
+    type: "book",
+  });
 }
 
 export default async function BookPage({ params }: Props) {
@@ -25,6 +29,22 @@ export default async function BookPage({ params }: Props) {
   const b = getBook(slug);
   if (!b) notFound();
   return (
+    <>
+    <JsonLd
+      data={{
+        "@type": "Book",
+        name: b.title,
+        author: { "@id": PERSON_LD["@id"], "@type": "Person", name: PERSON_LD.name },
+        datePublished: String(b.year),
+        numberOfPages: b.pages,
+        inLanguage: "ru",
+        ...(b.isbn ? { isbn: b.isbn } : {}),
+        ...(b.publisher ? { publisher: { "@type": "Organization", name: b.publisher } } : {}),
+        image: abs(b.cover.src),
+        url: abs(`/nauka/knigi/${b.slug}`),
+        description: b.annotation.join(" "),
+      }}
+    />
     <DocumentPage
       name={b.content}
       eyebrow={`${b.kind} · ${b.city}, ${b.year}`}
@@ -39,5 +59,6 @@ export default async function BookPage({ params }: Props) {
         ...(b.analysis ? [{ href: b.analysis.href, label: b.analysis.label }] : []),
       ]}
     />
+    </>
   );
 }

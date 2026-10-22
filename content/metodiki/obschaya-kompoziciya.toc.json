@@ -1,0 +1,77 @@
+[
+ {
+  "id": "1-vvedenie",
+  "text": "1. Введение",
+  "level": 2
+ },
+ {
+  "id": "2-institucionalnyy-i-obrazovatelnyy-kontekst",
+  "text": "2. Институциональный и образовательный контекст",
+  "level": 2
+ },
+ {
+  "id": "3-obrazovatelnye-celi-i-professionalnye-kompetencii",
+  "text": "3. Образовательные цели и профессиональные компетенции",
+  "level": 2
+ },
+ {
+  "id": "4-teoreticheskie-osnovy-obschey-kompozicii",
+  "text": "4. Теоретические основы общей композиции",
+  "level": 2
+ },
+ {
+  "id": "4-1-ritm-i-vizualnye-akcenty",
+  "text": "4.1. Ритм и визуальные акценты",
+  "level": 3
+ },
+ {
+  "id": "4-2-staticheskaya-i-dinamicheskaya-kompoziciya",
+  "text": "4.2. Статическая и динамическая композиция",
+  "level": 3
+ },
+ {
+  "id": "5-geometricheskiy-ornament-kak-metod-kompozicionnoy-podgotov",
+  "text": "5. Геометрический орнамент как метод композиционной подготовки",
+  "level": 2
+ },
+ {
+  "id": "6-rastitelnyy-ornament-i-hudozhestvennaya-transformaciya",
+  "text": "6. Растительный орнамент и художественная трансформация",
+  "level": 2
+ },
+ {
+  "id": "7-simmetriya-i-stroitelstvo-dekorativnyh-sooruzheniy",
+  "text": "7. Симметрия и строительство декоративных сооружений",
+  "level": 2
+ },
+ {
+  "id": "8-prakticheskie-uprazhneniya-i-postepennoe-razvitie-navykov",
+  "text": "8. Практические упражнения и постепенное развитие навыков",
+  "level": 2
+ },
+ {
+  "id": "9-samostoyatelnaya-rabota-i-obuchenie-orientirovannoe-na-uch",
+  "text": "9. Самостоятельная работа и обучение, ориентированное на ученика",
+  "level": 2
+ },
+ {
+  "id": "10-ocenka-na-osnove-kompetenciy",
+  "text": "10. Оценка на основе компетенций",
+  "level": 2
+ },
+ {
+  "id": "11-metodologicheskoe-znachenie-dlya-yuvelirnogo-obrazovaniya",
+  "text": "11. Методологическое значение для ювелирного образования",
+  "level": 2
+ },
+ {
+  "id": "12-aktualnost-v-sovremennom-obrazovanii",
+  "text": "12. Актуальность в современном образовании",
+  "level": 2
+ },
+ {
+  "id": "13-zaklyuchenie",
+  "text": "13. Заключение",
+  "level": 2
+ }
+]

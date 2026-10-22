@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
+import { pageMeta, PERSON_LD } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 import Image from "next/image";
 import Link from "next/link";
 import { PageHeader, SectionTitle } from "@/components/ui";
 import { articles, monographs, teaching } from "@/lib/data/bibliography";
 import { works } from "@/lib/data/gallery";
 
-export const metadata: Metadata = {
-  title: "Автор методологии — Дмитрий Дронов",
+export const metadata: Metadata = pageMeta({
+  title: "Автор методологии — Дмитрий Сергеевич Дронов",
   description:
-    "Дронов Дмитрий Сергеевич — кандидат педагогических наук, автор методологии обучения ручному ювелирному искусству, член Союза художников РФ.",
-};
+    "Дронов Дмитрий Сергеевич — кандидат педагогических наук, автор методологии обучения ручному ювелирному искусству, член Союза художников России, исследователь ювелирной культуры.",
+  path: "/avtor",
+  type: "profile",
+});
 
 const facts = [
   "Кандидат педагогических наук.",
@@ -23,6 +27,7 @@ const facts = [
 export default function AuthorPage() {
   return (
     <>
+      <JsonLd data={{ ...PERSON_LD, "@type": "Person" }} />
       <PageHeader
         eyebrow="Автор методологии"
         title="Дмитрий Сергеевич Дронов"

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { abs, pageMeta } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -14,11 +16,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const w = getWork(slug);
   if (!w) return {};
-  return {
+  return pageMeta({
     title: `«${w.title}» — ${w.student}, ${w.year}`,
-    description: `${w.kind} «${w.title}», ${w.student}, ${w.year}. Дипломная работа, руководитель ${w.supervisor}. Материалы: ${w.materials.join(", ")}.`,
-    openGraph: { images: [{ url: w.image, width: w.width, height: w.height }] },
-  };
+    description: `${w.kind} «${w.title}», ${w.student}, ${w.year}. Дипломная работа, руководитель ${w.supervisor}. Техники: ${w.techniques.join(", ")}. Материалы: ${w.materials.join(", ")}.`,
+    path: `/galereya/${w.slug}`,
+    image: { url: w.image, width: w.width, height: w.height, alt: `${w.kind} «${w.title}»` },
+    type: "article",
+  });
 }
 
 export default async function WorkPage({ params }: Props) {
@@ -40,6 +44,19 @@ export default async function WorkPage({ params }: Props) {
 
   return (
     <article>
+      <JsonLd
+        data={{
+          "@type": "VisualArtwork",
+          name: `${w.kind} «${w.title}»`,
+          creator: { "@type": "Person", name: w.student },
+          dateCreated: String(w.year),
+          artMedium: w.materials.join(", "),
+          artform: "Ювелирное искусство",
+          image: abs(w.image),
+          url: abs(`/galereya/${w.slug}`),
+          description: `Дипломная работа. Руководитель ${w.supervisor}. Техники: ${w.techniques.join(", ")}.`,
+        }}
+      />
       <div className="wrap pt-10">
         <nav aria-label="Навигация" className="text-[14px] text-ink-soft">
           <Link href="/galereya" className="link">

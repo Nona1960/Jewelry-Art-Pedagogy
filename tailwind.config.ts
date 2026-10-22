@@ -7,9 +7,9 @@ const config: Config = {
     extend: {
       colors: {
         milk: "#FAF8F3",
-        ink: { DEFAULT: "#526987", deep: "#3E5372", soft: "#7C8EA6" },
+        ink: { DEFAULT: "#526987", deep: "#3E5372", soft: "#5E6F88" },
         sand: "#E9D9B8",
-        gold: { DEFAULT: "#B49A65", deep: "#8E7646" },
+        gold: { DEFAULT: "#B49A65", deep: "#76612F", text: "#8A7240" },
         line: "#E4DCCB",
       },
       fontFamily: {

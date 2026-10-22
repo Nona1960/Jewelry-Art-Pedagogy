@@ -1,0 +1,187 @@
+[
+ {
+  "id": "1-vvedenie",
+  "text": "1. Введение",
+  "level": 2
+ },
+ {
+  "id": "2-celi-i-metodologiya-issledovaniya",
+  "text": "2. Цели и методология исследования",
+  "level": 2
+ },
+ {
+  "id": "2-1-celi-issledovaniya",
+  "text": "2.1. Цели исследования",
+  "level": 3
+ },
+ {
+  "id": "2-2-metodologicheskiy-podhod",
+  "text": "2.2. Методологический подход",
+  "level": 3
+ },
+ {
+  "id": "3-institucionalnyy-kontekst-i-struktura-obrazovaniya",
+  "text": "3. Институциональный контекст и структура образования",
+  "level": 2
+ },
+ {
+  "id": "4-vosk-kak-sredstvo-hudozhestvennogo-poznaniya",
+  "text": "4. Воск как средство художественного познания",
+  "level": 2
+ },
+ {
+  "id": "4-1-materialnye-svoystva-i-tvorcheskie-resheniya",
+  "text": "4.1. Материальные свойства и творческие решения",
+  "level": 3
+ },
+ {
+  "id": "4-2-materialnoe-poznanie",
+  "text": "4.2. Материальное познание",
+  "level": 3
+ },
+ {
+  "id": "5-psihologiya-trehmernoy-vizualizacii",
+  "text": "5. Психология трехмерной визуализации",
+  "level": 2
+ },
+ {
+  "id": "5-1-prostranstvennoe-predstavlenie",
+  "text": "5.1. Пространственное представление",
+  "level": 3
+ },
+ {
+  "id": "5-2-preobrazovanie-ot-koncepcii-k-obektu",
+  "text": "5.2. Преобразование от концепции к объекту",
+  "level": 3
+ },
+ {
+  "id": "6-sensomotornoe-obuchenie-i-manualnaya-terapiya",
+  "text": "6. Сенсомоторное обучение и мануальная терапия",
+  "level": 2
+ },
+ {
+  "id": "6-1-koordinaciya-vospriyatiya-i-dvizheniya",
+  "text": "6.1. Координация восприятия и движения",
+  "level": 3
+ },
+ {
+  "id": "6-2-razvitie-professionalnogo-avtomatizma",
+  "text": "6.2. Развитие профессионального автоматизма",
+  "level": 3
+ },
+ {
+  "id": "7-uprazhnenie-monogramma-osnovy-upravleniya-materialnymi-res",
+  "text": "7. Упражнение «Монограмма»: Основы управления материальными ресурсами",
+  "level": 2
+ },
+ {
+  "id": "7-1-pedagogicheskoe-znachenie",
+  "text": "7.1. Педагогическое значение",
+  "level": 3
+ },
+ {
+  "id": "7-2-psihologicheskaya-interpretaciya",
+  "text": "7.2. Психологическая интерпретация",
+  "level": 3
+ },
+ {
+  "id": "8-modelirovanie-kolca-kaboshona-geometriya-struktura-i-tehno",
+  "text": "8. Моделирование кольца-кабошона: геометрия, структура и технологические перспективы",
+  "level": 2
+ },
+ {
+  "id": "8-1-integraciya-hudozhestvennogo-i-tehnicheskogo-myshleniya",
+  "text": "8.1. Интеграция художественного и технического мышления",
+  "level": 3
+ },
+ {
+  "id": "8-2-predvoshischayuschee-rassuzhdenie",
+  "text": "8.2. Предвосхищающее рассуждение",
+  "level": 3
+ },
+ {
+  "id": "8-3-tvorchestvo-osnovannoe-na-ogranicheniyah",
+  "text": "8.3. Творчество, основанное на ограничениях",
+  "level": 3
+ },
+ {
+  "id": "9-additivnoe-modelirovanie-iz-voska-i-azhurnaya-konstrukciya",
+  "text": "9. Аддитивное моделирование из воска и ажурная конструкция",
+  "level": 2
+ },
+ {
+  "id": "9-1-additivnye-i-subtraktivnye-strategii",
+  "text": "9.1. Аддитивные и субтрактивные стратегии",
+  "level": 3
+ },
+ {
+  "id": "9-2-konstruktivnoe-voobrazhenie",
+  "text": "9.2. Конструктивное воображение",
+  "level": 3
+ },
+ {
+  "id": "9-3-strukturnaya-slozhnost",
+  "text": "9.3. Структурная сложность",
+  "level": 3
+ },
+ {
+  "id": "10-reznye-azhurnye-yuvelirnye-izdeliya-integraciya-professio",
+  "text": "10. Резные ажурные ювелирные изделия: интеграция профессиональных компетенций",
+  "level": 2
+ },
+ {
+  "id": "10-1-uvelichenie-slozhnosti-zadachi",
+  "text": "10.1. Увеличение сложности задачи",
+  "level": 3
+ },
+ {
+  "id": "10-2-tvorcheskaya-nezavisimost",
+  "text": "10.2. Творческая независимость",
+  "level": 3
+ },
+ {
+  "id": "11-vyyavlenie-oshibok-refleksivnaya-praktika-i-professionaln",
+  "text": "11. Выявление ошибок, рефлексивная практика и профессиональное суждение",
+  "level": 2
+ },
+ {
+  "id": "11-1-oshibka-kak-informaciya",
+  "text": "11.1. Ошибка как информация",
+  "level": 3
+ },
+ {
+  "id": "11-2-refleksiya-v-processe-deystviya",
+  "text": "11.2. Рефлексия в процессе действия",
+  "level": 3
+ },
+ {
+  "id": "11-3-rol-obratnoy-svyazi",
+  "text": "11.3. Роль обратной связи",
+  "level": 3
+ },
+ {
+  "id": "12-motivaciya-samoeffektivnost-i-psihologiya-tvorchestva",
+  "text": "12. Мотивация, самоэффективность и психология творчества",
+  "level": 2
+ },
+ {
+  "id": "12-1-opyt-dostizheniya-masterstva",
+  "text": "12.1. Опыт достижения мастерства",
+  "level": 3
+ },
+ {
+  "id": "12-2-tvorcheskaya-avtonomiya",
+  "text": "12.2. Творческая автономия",
+  "level": 3
+ },
+ {
+  "id": "12-3-produktivnaya-nastoychivost",
+  "text": "12.3. Продуктивная настойчивость",
+  "level": 3
+ },
+ {
+  "id": "13-kognitivnaya-nagruzka-i-posledovatelnost-obucheniya",
+  "text": "13. Когнитивная нагрузка и последовательность обучения",
+  "level": 2
+ }
+]

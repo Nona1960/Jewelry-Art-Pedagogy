@@ -99,14 +99,15 @@ p {
   font-size: 26px;
   scroll-margin-top: 7rem;
 }
-.doc-html h4 {
+.doc-html h4,
+.doc-html h3.doc-sub {
   margin: 2rem 0 0.75rem;
   font-family: "PT Serif", Georgia, serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #8e7646;
+  color: #76612f;
   scroll-margin-top: 7rem;
 }
 .doc-html p {
@@ -133,7 +134,7 @@ p {
   padding-left: 0.2rem;
 }
 .doc-html li::marker {
-  color: #b49a65;
+  color: #8a7240;
 }
 .doc-html img {
   display: block;

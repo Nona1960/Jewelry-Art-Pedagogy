@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import { Suspense } from "react";
 import { PageHeader } from "@/components/ui";
 import LibraryCatalog from "@/components/LibraryCatalog";
 
-export const metadata: Metadata = {
-  title: "Библиотека",
+export const metadata: Metadata = pageMeta({
+  title: "Библиотека учебно-методических трудов",
   description:
     "Электронная библиотека учебно-методических трудов Дмитрия Дронова: учебные пособия, учебные программы, методические разработки по ювелирному искусству.",
-};
+  path: "/biblioteka",
+});
 
 export default function LibraryPage() {
   return (

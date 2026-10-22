@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Logo from "./Logo";
 import { FOOTER_COLUMNS, SITE } from "@/lib/site";
 
 export default function Footer() {
@@ -8,12 +8,8 @@ export default function Footer() {
   return (
     <footer className="mt-24 bg-sand text-ink-deep">
       <div className="wrap py-14">
-        <div className="mb-12 flex items-center gap-4">
-          <Image src="/images/logo-sun.jpg" alt="Логотип проекта — Солнце" width={56} height={56} />
-          <div>
-            <p className="font-display text-[24px] leading-tight text-ink-deep">{SITE.name}</p>
-            <p className="font-serif text-[12px] uppercase tracking-[0.2em] text-gold-deep">{SITE.tagline}</p>
-          </div>
+        <div className="mb-12">
+          <Logo width={96} tone="footer" />
         </div>
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {FOOTER_COLUMNS.map((col) => (
@@ -22,7 +18,7 @@ export default function Footer() {
               <ul className="space-y-2">
                 {col.links.map((l) => (
                   <li key={l.href}>
-                    <Link href={l.href} className="text-[15px] text-ink-deep/90 transition-colors hover:text-gold-deep">
+                    <Link href={l.href} className="text-[15px] text-ink-deep transition-colors hover:underline">
                       {l.label}
                     </Link>
                   </li>
@@ -31,7 +27,7 @@ export default function Footer() {
             </div>
           ))}
         </div>
-        <div className="mt-12 flex flex-col gap-2 border-t border-gold/40 pt-6 text-[14px] text-ink-deep/80 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 flex flex-col gap-2 border-t border-gold/40 pt-6 text-[14px] text-ink-deep sm:flex-row sm:items-center sm:justify-between">
           {SITE.email ? (
             <p>
               Электронная почта: <span className="select-all">{SITE.email}</span>

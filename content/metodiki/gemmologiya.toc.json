@@ -1,0 +1,162 @@
+[
+ {
+  "id": "1-vvedenie",
+  "text": "1. Введение",
+  "level": 2
+ },
+ {
+  "id": "2-issledovanie-aktualnosti",
+  "text": "2. Исследование актуальности",
+  "level": 2
+ },
+ {
+  "id": "3-cel-zadacha-obekt-i-predmet-issledovaniya",
+  "text": "3. Цель, задача, объект и предмет исследования",
+  "level": 2
+ },
+ {
+  "id": "4-metodologicheskoe-obosnovanie-issledovaniya",
+  "text": "4. Методологическое обоснование исследования",
+  "level": 2
+ },
+ {
+  "id": "5-soderzhanie-gemmologicheskoy-podgotovki-buduschego-hudozhn",
+  "text": "5. Содержание геммологической подготовки будущего художника-ювелира",
+  "level": 2
+ },
+ {
+  "id": "5-1-svoystva-i-klassifikaciya-yuvelirnyh-kamney",
+  "text": "5.1. Свойства и классификация ювелирных камней",
+  "level": 3
+ },
+ {
+  "id": "5-2-diagnostika-yuvelirnyh-kamney",
+  "text": "5.2. Диагностика ювелирных камней",
+  "level": 3
+ },
+ {
+  "id": "5-3-prirodnye-sinteticheskie-kamni-i-imitacii",
+  "text": "5.3. Природные, синтетические камни и имитации",
+  "level": 3
+ },
+ {
+  "id": "5-4-ocenka-i-stoimost-yuvelirnyh-kamney",
+  "text": "5.4. Оценка и стоимость ювелирных камней",
+  "level": 3
+ },
+ {
+  "id": "6-model-formirovaniya-gemmologicheskih-kompetenciy",
+  "text": "6. Модель формирования геммологических компетенций",
+  "level": 2
+ },
+ {
+  "id": "kompetenciya-1-teoretiko-gemmologicheskaya",
+  "text": "Компетенция 1. Теоретико-геммологическая",
+  "level": 3
+ },
+ {
+  "id": "kompetenciya-2-diagnostiko-analiticheskaya",
+  "text": "Компетенция 2. Диагностико-аналитическая",
+  "level": 3
+ },
+ {
+  "id": "kompetenciya-3-materialovedcheskaya-i-tehnologicheskaya",
+  "text": "Компетенция 3. Материаловедческая и технологическая",
+  "level": 3
+ },
+ {
+  "id": "kompetenciya-4-ocenochno-proektnaya",
+  "text": "Компетенция 4. Оценочно-проектная",
+  "level": 3
+ },
+ {
+  "id": "7-etapy-kompetentnostno-orientirovannogo-obucheniya",
+  "text": "7. Этапы компетентностно-ориентированного обучения",
+  "level": 2
+ },
+ {
+  "id": "8-metodika-proverki-sformirovannosti-kompetenciy",
+  "text": "8. Методика проверки сформированности компетенций",
+  "level": 2
+ },
+ {
+  "id": "8-1-teoreticheskoe-razvitie",
+  "text": "8.1. Теоретическое развитие",
+  "level": 3
+ },
+ {
+  "id": "8-2-prakticheskaya-diagnostika-obrazca",
+  "text": "8.2. Практическая диагностика образца",
+  "level": 3
+ },
+ {
+  "id": "8-3-situacionnye-professionalnye-zadachi",
+  "text": "8.3. Ситуационные профессиональные задачи",
+  "level": 3
+ },
+ {
+  "id": "8-4-sravnitelnaya-ocenka-kachestva-kamney",
+  "text": "8.4. Сравнительная оценка качества камней",
+  "level": 3
+ },
+ {
+  "id": "8-5-kompleksnaya-proektno-diagnosticheskaya-rabota",
+  "text": "8.5. Комплексная проектно-диагностическая работа",
+  "level": 3
+ },
+ {
+  "id": "9-predlagaemaya-diagnosticheskaya-karta-ocenki-kompetenciy",
+  "text": "9. Предлагаемая диагностическая карта оценки компетенций",
+  "level": 2
+ },
+ {
+  "id": "9-1-teoretiko-gemmologicheskaya-kompetentnost-25-ballov",
+  "text": "9.1. Теоретико-геммологическая компетентность — 25 баллов",
+  "level": 3
+ },
+ {
+  "id": "9-2-diagnostiko-analiticheskaya-kompetentnost-25-ballov",
+  "text": "9.2. Диагностико-аналитическая компетентность — 25 баллов",
+  "level": 3
+ },
+ {
+  "id": "9-3-materialovedcheskaya-i-tehnologicheskaya-kompetentnost-2",
+  "text": "9.3. Материаловедческая и технологическая компетентность — 25 баллов",
+  "level": 3
+ },
+ {
+  "id": "9-4-ocenochno-proektnaya-kompetentnost-25-ballov",
+  "text": "9.4. Оценочно-проектная компетентность — 25 баллов",
+  "level": 3
+ },
+ {
+  "id": "9-5-interpretaciya-rezultatov",
+  "text": "9.5. Интерпретация результатов",
+  "level": 3
+ },
+ {
+  "id": "10-primer-kompleksnogo-kontrolnogo-zadaniya",
+  "text": "10. Пример комплексного контрольного задания",
+  "level": 2
+ },
+ {
+  "id": "11-usloviya-realizacii-predlagaemyh-metodik",
+  "text": "11. Условия реализации предлагаемых методик",
+  "level": 2
+ },
+ {
+  "id": "12-obsuzhdenie-i-perspektivy-issledovaniy",
+  "text": "12. Обсуждение и перспективы исследований",
+  "level": 2
+ },
+ {
+  "id": "zaklyuchenie",
+  "text": "Заключение",
+  "level": 2
+ },
+ {
+  "id": "spisok-literatury",
+  "text": "Список литературы",
+  "level": 2
+ }
+]

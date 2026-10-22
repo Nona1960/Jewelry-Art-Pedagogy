@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { abs, pageMeta, PERSON_LD } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Toc } from "@/components/FullTextReader";
@@ -16,10 +18,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const m = getMethod(slug);
   if (!m) return {};
   const { meta } = loadMethod(slug);
-  return {
+  return pageMeta({
     title: m.title ?? meta.title,
-    description: meta.annotation[0]?.slice(0, 300),
-  };
+    description: meta.annotation.join(" ") || (m.course ?? ""),
+    path: `/metodologiya/metodiki/${m.slug}`,
+    type: "article",
+  });
 }
 
 export default async function MethodPage({ params }: Props) {
@@ -34,6 +38,22 @@ export default async function MethodPage({ params }: Props) {
   const block = METHOD_BLOCKS.find((b) => b.id === m.block);
   return (
     <article>
+      <JsonLd
+        data={{
+          "@type": "ScholarlyArticle",
+          headline: title.slice(0, 110),
+          name: title,
+          author: { "@id": PERSON_LD["@id"], "@type": "Person", name: PERSON_LD.name },
+          inLanguage: "ru",
+          datePublished: String(METHODS_YEAR),
+          url: abs(`/metodologiya/metodiki/${m.slug}`),
+          ...(meta.keywords ? { keywords: meta.keywords } : {}),
+          ...(meta.annotation.length ? { abstract: meta.annotation.join(" ") } : {}),
+          ...(m.doi
+            ? { identifier: { "@type": "PropertyValue", propertyID: "DOI", value: m.doi }, sameAs: doiUrl(m.doi) }
+            : {}),
+        }}
+      />
       <header className="border-b border-line">
         <div className="wrap py-12 sm:py-16">
           <nav aria-label="Навигация" className="text-[14px] text-ink-soft">
@@ -98,9 +118,9 @@ export default async function MethodPage({ params }: Props) {
         </div>
       </header>
       <div className="wrap grid gap-12 py-14 lg:grid-cols-[280px_1fr] lg:gap-16">
-        <aside className="min-w-0 lg:sticky lg:top-28 lg:self-start">
+        <div className="min-w-0 lg:sticky lg:top-28 lg:self-start">
           <Toc toc={toc} />
-        </aside>
+        </div>
         <div className="doc-html min-w-0 max-w-[50rem]" lang="ru" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </article>

@@ -1,4 +1,7 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, PERSON_LD } from "@/lib/seo";
 import Link from "next/link";
 import { SITE } from "@/lib/site";
 import { directions } from "@/lib/data/methodology";
@@ -7,10 +10,30 @@ import { library } from "@/lib/data/library";
 import { articles, byNumbers, monographs, MAIN_MONOGRAPH } from "@/lib/data/bibliography";
 import { PubList, SectionTitle, WorkCard } from "@/components/ui";
 
+export const metadata: Metadata = pageMeta({
+  description:
+    "Научно-образовательный проект Дмитрия Дронова, кандидата педагогических наук: авторская методология подготовки художников-ювелиров, научные труды, методики обучения, учебно-методическая библиотека и галерея дипломных работ.",
+  path: "/",
+});
+
 export default function Home() {
   const selected = byNumbers([97, 89, MAIN_MONOGRAPH, 45]);
   return (
     <>
+      <JsonLd
+        data={[
+          {
+            "@type": "WebSite",
+            "@id": `${SITE.url}/#website`,
+            url: SITE.url,
+            name: SITE.name,
+            description: SITE.tagline,
+            inLanguage: "ru-RU",
+            author: { "@id": PERSON_LD["@id"] },
+          },
+          PERSON_LD,
+        ]}
+      />
       {/* Первый экран */}
       <section className="border-b border-line">
         <div className="wrap grid items-center gap-10 py-12 sm:py-16 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16 lg:py-20">
@@ -116,7 +139,7 @@ export default function Home() {
                   href={`/metodologiya#${d.id}`}
                   className="group flex h-full flex-col p-6 transition-colors hover:bg-white"
                 >
-                  <span className="font-display text-[36px] leading-none text-gold">{d.num}</span>
+                  <span className="font-display text-[36px] leading-none text-gold-text">{d.num}</span>
                   <span className="mt-4 font-display text-[22px] leading-snug text-ink-deep group-hover:text-gold-deep">
                     {d.title}
                   </span>
@@ -156,7 +179,7 @@ export default function Home() {
       <section className="bg-ink text-white">
         <div className="wrap grid items-center gap-10 py-16 lg:grid-cols-[1fr_auto]">
           <div>
-            <p className="font-serif text-[12px] uppercase tracking-[0.22em] text-sand">Электронная библиотека</p>
+            <p className="font-serif text-[12px] uppercase tracking-[0.22em] text-white/90">Электронная библиотека</p>
             <h2 className="mt-3 text-[36px] text-white sm:text-[44px]">Учебно-методические труды</h2>
             <p className="mt-4 max-w-2xl text-[17px] text-white/85">
               Авторские учебные пособия, учебные программы, методические разработки и практические руководства — каталог

@@ -81,8 +81,12 @@ export const METHODS: Method[] = [
   {
     block: "osnovaniya",
     kind: "general",
+    slug: "integrativnaya-metodika",
     doi: "10.5281/zenodo.23500383",
     zenodoTitle: "Dronov’s Integrated Competency Development Method for Jewelry Art Education",
+    title:
+      "Интегративная методика формирования и оценки профессиональных компетенций в ювелирном искусстве",
+    course: "Сквозная методика: материал — технология — художественная задача",
   },
 
   // II. Материально-технологическая подготовка
@@ -100,9 +104,13 @@ export const METHODS: Method[] = [
   {
     block: "materialy",
     kind: "course",
+    slug: "gemmologiya",
     doi: "10.5281/zenodo.23499927",
     zenodoTitle:
       "Competency-Based Gemology Education in Professional Jewelry Art Training: Educational Objectives, Teaching Methodology, and Assessment of Professional Competencies",
+    title:
+      "Компетентностно-ориентированный подход к обучению геммологии в системе профессионального ювелирного образования: цели, методика и оценка результатов подготовки",
+    course: "«Геммология» · бакалавриат · на основе учебного пособия 2018 года",
   },
   {
     block: "materialy",
@@ -131,14 +139,22 @@ export const METHODS: Method[] = [
   {
     block: "proektirovanie",
     kind: "course",
+    slug: "obschaya-kompoziciya",
     doi: "10.5281/zenodo.23503386",
     zenodoTitle: "Composition, Creative Cognition, and the Psychology of Artistic Thinking in Jewelry Design Education",
+    title:
+      "Общая композиция в образовании в области ювелирного и декоративно-прикладного искусства: методические принципы и педагогическое значение учебной программы",
+    course: "«Общая композиция» · бакалавриат, 1 курс",
   },
   {
     block: "proektirovanie",
     kind: "course",
+    slug: "tehnicheskiy-risunok",
     doi: "10.5281/zenodo.23503517",
     zenodoTitle: "Technical Drawing, Spatial Cognition, and Creative Thinking in Jewelry Education",
+    title:
+      "Технический рисунок, пространственное мышление и творческое мышление в ювелирном образовании",
+    course: "«Технический рисунок» · бакалавриат",
   },
   {
     block: "proektirovanie",
@@ -165,18 +181,26 @@ export const METHODS: Method[] = [
   {
     block: "proektirovanie",
     kind: "course",
+    slug: "renovaciya",
     doi: "10.5281/zenodo.23503743",
     zenodoTitle:
       "Jewelry Renovation as a Method of Developing Design Thinking, Visuospatial Reconstruction, and Professional Creativity",
+    title:
+      "Реновация ювелирных изделий как метод развития проектного мышления, визуально-пространственной реконструкции и профессиональной креативности",
+    course: "«Реновация в ювелирном искусстве» · магистратура",
   },
 
   // IV. Исполнительское мастерство и практика
   {
     block: "masterstvo",
     kind: "course",
+    slug: "voskovoe-modelirovanie",
     doi: "10.5281/zenodo.23503608",
     zenodoTitle:
       "Wax Modeling in Jewelry Education: Material Cognition, Creative Psychology, and the Development of Professional Craftsmanship",
+    title:
+      "Моделирование из воска в ювелирном деле: познание материала, творческая психология и развитие профессионального мастерства",
+    course: "«Моделирование ювелирных изделий» · бакалавриат, 2–4 курсы",
   },
   {
     block: "masterstvo",
@@ -199,9 +223,13 @@ export const METHODS: Method[] = [
   {
     block: "masterstvo",
     kind: "course",
+    slug: "proizvodstvennaya-praktika",
     doi: "10.5281/zenodo.23500548",
     zenodoTitle:
       "Methodological Framework for Developing Professional Craftsmanship in Jewelry Art through Production Practice: A Competency-Based Approach",
+    title:
+      "Методические основы формирования профессионального мастерства художников-ювелиров в процессе производственной практики",
+    course: "Производственная практика · модуль «Плетёный браслет», 72 ч",
   },
   {
     block: "masterstvo",

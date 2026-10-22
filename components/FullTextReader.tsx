@@ -45,13 +45,13 @@ export function TextBody({ blocks, scanDir, title }: { blocks: Block[]; scanDir:
             );
           case "h4":
             return (
-              <h4
+              <h3
                 key={i}
                 id={b.id}
                 className="mb-3 mt-8 scroll-mt-28 font-serif text-[15px] font-bold uppercase tracking-[0.08em] text-gold-deep"
               >
                 {b.text}
-              </h4>
+              </h3>
             );
           case "scan":
             return (

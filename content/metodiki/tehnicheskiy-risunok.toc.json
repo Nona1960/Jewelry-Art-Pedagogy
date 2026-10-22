@@ -1,0 +1,57 @@
+[
+ {
+  "id": "1-problema-issledovaniya",
+  "text": "1. Проблема исследования",
+  "level": 2
+ },
+ {
+  "id": "2-pervichnye-istochniki-i-analiticheskiy-metod",
+  "text": "2. Первичные источники и аналитический метод",
+  "level": 2
+ },
+ {
+  "id": "3-arhitektura-obucheniya",
+  "text": "3. Архитектура обучения",
+  "level": 2
+ },
+ {
+  "id": "4-prostranstvennoe-poznanie-i-mentalnaya-transformaciya",
+  "text": "4. Пространственное познание и ментальная трансформация",
+  "level": 2
+ },
+ {
+  "id": "5-vizualnoe-vospriyatie-i-tonalnoe-modelirovanie",
+  "text": "5. Визуальное восприятие и тональное моделирование",
+  "level": 2
+ },
+ {
+  "id": "6-tvorchestvo-kak-iterativnyy-process-proektirovaniya",
+  "text": "6. Творчество как итеративный процесс проектирования",
+  "level": 2
+ },
+ {
+  "id": "7-kognitivnaya-nagruzka-i-metodicheskaya-podderzhka",
+  "text": "7. Когнитивная нагрузка и методическая поддержка",
+  "level": 2
+ },
+ {
+  "id": "8-predlagaemyy-plan-empiricheskogo-issledovaniya",
+  "text": "8. Предлагаемый план эмпирического исследования",
+  "level": 2
+ },
+ {
+  "id": "9-ogranicheniya-i-nauchnyy-vklad",
+  "text": "9. Ограничения и научный вклад",
+  "level": 2
+ },
+ {
+  "id": "zaklyuchenie",
+  "text": "Заключение",
+  "level": 2
+ },
+ {
+  "id": "ssylki",
+  "text": "Ссылки",
+  "level": 2
+ }
+]

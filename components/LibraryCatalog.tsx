@@ -54,7 +54,7 @@ export default function LibraryCatalog() {
 
   return (
     <div className="grid gap-10 lg:grid-cols-[280px_1fr]">
-      <aside className="space-y-8 lg:sticky lg:top-28 lg:self-start">
+      <div className="space-y-8 lg:sticky lg:top-28 lg:self-start">
         <div>
           <label htmlFor="lib-search" className="eyebrow">
             Поиск
@@ -72,12 +72,12 @@ export default function LibraryCatalog() {
         <fieldset>
           <legend className="eyebrow">Тип материала</legend>
           <div className="mt-3 space-y-2">
-            {LIB_TYPES.map((t) => {
+            {LIB_TYPES.filter((t) => (counts.get(t) ?? 0) > 0).map((t) => {
               const c = counts.get(t) ?? 0;
               return (
                 <label
                   key={t}
-                  className={`flex cursor-pointer items-center justify-between gap-3 text-[15px] ${c ? "" : "opacity-50"}`}
+                  className="flex min-h-11 cursor-pointer items-center justify-between gap-3 text-[15px]"
                 >
                   <span className="flex items-center gap-3">
                     <input
@@ -144,9 +144,10 @@ export default function LibraryCatalog() {
             Сбросить фильтры
           </button>
         )}
-      </aside>
+      </div>
 
       <div className="min-w-0">
+        <h2 className="sr-only">Каталог материалов</h2>
         <p className="mb-5 text-[15px] text-ink-soft" aria-live="polite">
           Найдено: <span className="text-ink-deep">{items.length}</span> из {library.length}
         </p>
@@ -174,7 +175,7 @@ function LibCard({ item: i }: { item: LibItem }) {
               {i.type}
               {i.level !== "—" ? ` · ${i.level}` : ""}
             </p>
-            <h3 className="mt-2 text-[26px] leading-snug group-hover:text-gold-deep">{i.title}</h3>
+            <h2 className="mt-2 text-[26px] leading-snug group-hover:text-gold-deep">{i.title}</h2>
             {i.href && (
               <p className="mt-1 text-[13px] uppercase tracking-[0.15em] text-gold-deep">Полный текст на сайте</p>
             )}

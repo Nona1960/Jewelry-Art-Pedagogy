@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import Image from "next/image";
 import { BOOKS } from "@/lib/data/books";
@@ -17,11 +18,12 @@ import {
   published,
 } from "@/lib/data/bibliography";
 
-export const metadata: Metadata = {
-  title: "Наука",
+export const metadata: Metadata = pageMeta({
+  title: "Научные труды",
   description:
-    "Научные труды Дмитрия Дронова: кандидатская диссертация, монография «Социодинамика ювелирной культуры», научные статьи, исследования истории российского ювелирного искусства.",
-};
+    "Научные труды Дмитрия Дронова: кандидатская диссертация, монографии, научные статьи, исследования истории российского ювелирного искусства, полная библиография.",
+  path: "/nauka",
+});
 
 const TOC = [
   { id: "dissertaciya", label: "Кандидатская диссертация" },
@@ -49,7 +51,7 @@ export default function SciencePage() {
       />
 
       <div className="wrap grid gap-12 py-16 lg:grid-cols-[260px_1fr] lg:gap-16">
-        <aside className="lg:sticky lg:top-28 lg:self-start">
+        <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="eyebrow">Разделы</p>
           <ol className="mt-4 space-y-2 border-l border-line pl-4 text-[15px]">
             {TOC.map((t) => (
@@ -60,7 +62,7 @@ export default function SciencePage() {
               </li>
             ))}
           </ol>
-        </aside>
+        </div>
 
         <div className="min-w-0 space-y-20">
           <section>

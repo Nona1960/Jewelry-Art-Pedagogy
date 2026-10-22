@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "@fontsource/cormorant-garamond/400.css";
 import "@fontsource/cormorant-garamond/500.css";
 import "@fontsource/cormorant-garamond/600.css";
@@ -10,6 +10,7 @@ import "@fontsource/pt-serif/400-italic.css";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import HomeButton from "@/components/HomeButton";
 import { SITE } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -29,7 +30,10 @@ export const metadata: Metadata = {
     "ювелирная культура",
     "дипломные работы ювелиров",
   ],
-  authors: [{ name: "Дмитрий Дронов" }],
+  authors: [{ name: "Дмитрий Дронов", url: "/avtor" }],
+  creator: "Дмитрий Дронов",
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large" } },
+  formatDetection: { telephone: false },
   openGraph: {
     type: "website",
     locale: "ru_RU",
@@ -37,6 +41,12 @@ export const metadata: Metadata = {
     images: [{ url: "/images/dmitry-dronov-portrait.jpg", width: 964, height: 1280 }],
   },
   icons: { icon: "/icon.png", apple: "/apple-touch-icon.png" },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#FAF8F3",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -50,8 +60,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Перейти к содержанию
         </a>
         <Header />
-        <main id="main" className="flex-1">
+        <main id="main" className="flex-1 scroll-mt-24" tabIndex={-1}>
           {children}
+          <HomeButton />
         </main>
         <Footer />
       </body>

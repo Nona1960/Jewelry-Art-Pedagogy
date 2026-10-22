@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-milk/95 backdrop-blur">
       <div className="wrap flex h-[76px] items-center justify-between gap-6">
-        <Logo />
+        <Logo priority />
         <nav aria-label="Главное меню" className="hidden lg:block">
           <ul className="flex items-center gap-7">
             {NAV.map((item) => (

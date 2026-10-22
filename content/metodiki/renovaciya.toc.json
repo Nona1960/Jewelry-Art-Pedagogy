@@ -1,0 +1,72 @@
+[
+ {
+  "id": "1-vvedenie",
+  "text": "1. Введение",
+  "level": 2
+ },
+ {
+  "id": "2-materialy-i-metody-issledovaniya",
+  "text": "2. Материалы и методы исследования",
+  "level": 2
+ },
+ {
+  "id": "3-struktura-i-soderzhanie-obrazovatelnoy-metodiki",
+  "text": "3. Структура и содержание образовательной методики",
+  "level": 2
+ },
+ {
+  "id": "4-renovaciya-kak-osobaya-forma-professionalnogo-myshleniya",
+  "text": "4. Реновация как особая форма профессионального мышления",
+  "level": 2
+ },
+ {
+  "id": "5-psihologiya-vizualno-prostranstvennoy-rekonstrukcii",
+  "text": "5. Психология визуально-пространственной реконструкции",
+  "level": 2
+ },
+ {
+  "id": "6-professionalnaya-kreativnost-i-rekonstruktivnoe-voobrazhen",
+  "text": "6. Профессиональная креативность и реконструктивное воображение",
+  "level": 2
+ },
+ {
+  "id": "7-neopredelennost-i-nauchnaya-obosnovannost-resheniya",
+  "text": "7. Неопределенность и научная обоснованность решения",
+  "level": 2
+ },
+ {
+  "id": "8-tehnologicheskaya-karta-kak-instrument-professionalnoy-ref",
+  "text": "8. Технологическая карта как инструмент профессиональной рефлексии",
+  "level": 2
+ },
+ {
+  "id": "9-refleksivnaya-praktika-i-ekspertnoe-izmerenie",
+  "text": "9. Рефлексивная практика и экспертное измерение",
+  "level": 2
+ },
+ {
+  "id": "10-metodologicheskaya-model-ocenki-professionalnyh-kompetenc",
+  "text": "10. Методологическая модель оценки профессиональных компетенций",
+  "level": 2
+ },
+ {
+  "id": "11-perspektivy-eksperimentalnogo-issledovaniya",
+  "text": "11. Перспективы экспериментального исследования",
+  "level": 2
+ },
+ {
+  "id": "12-obsuzhdenie",
+  "text": "12. Обсуждение",
+  "level": 2
+ },
+ {
+  "id": "13-zaklyuchenie",
+  "text": "13. Заключение",
+  "level": 2
+ },
+ {
+  "id": "spisok-literatury",
+  "text": "Список литературы",
+  "level": 2
+ }
+]

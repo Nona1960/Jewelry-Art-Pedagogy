@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Toc } from "@/components/FullTextReader";
@@ -15,10 +16,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const m = getManual(slug);
   if (!m) return {};
-  return {
+  return pageMeta({
     title: `${m.title}${m.subtitle ? `. ${m.subtitle}` : ""}`,
-    description: `${m.author}. ${m.title}. ${m.subtitle ?? m.type}. Полный текст.`,
-  };
+    description: `${m.author}. ${m.title}. ${m.subtitle ?? m.type}. ${m.annotation[0]}`,
+    path: `/biblioteka/posobiya/${m.slug}`,
+    type: "book",
+  });
 }
 
 export default async function ManualPage({ params }: Props) {
@@ -65,9 +68,9 @@ export default async function ManualPage({ params }: Props) {
         </div>
       </header>
       <div className="wrap grid gap-12 py-14 lg:grid-cols-[280px_1fr] lg:gap-16">
-        <aside className="min-w-0 lg:sticky lg:top-28 lg:self-start">
+        <div className="min-w-0 lg:sticky lg:top-28 lg:self-start">
           <Toc toc={toc} />
-        </aside>
+        </div>
         <div className="doc-html min-w-0 max-w-[50rem]" lang="ru" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </article>

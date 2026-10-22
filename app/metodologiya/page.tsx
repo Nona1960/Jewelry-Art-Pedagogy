@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import Link from "next/link";
 import { PageHeader, PubList } from "@/components/ui";
 import { directions } from "@/lib/data/methodology";
 import { byNumbers } from "@/lib/data/bibliography";
 import { doiUrl, METHOD_BLOCKS, methodsOf } from "@/lib/data/methods";
 
-export const metadata: Metadata = {
-  title: "Методология",
+export const metadata: Metadata = pageMeta({
+  title: "Методология и методики обучения ювелирному искусству",
   description:
-    "Авторская методология Дмитрия Дронова: научно-педагогическая концепция, принципы профессионального художественного образования, проектирование, технологическая подготовка и дипломная деятельность художников-ювелиров.",
-};
+    "Авторская методология Дмитрия Дронова: научные основания, материально-технологическая, художественно-проектная подготовка и исполнительское мастерство художников-ювелиров. Методики курсов с DOI Zenodo.",
+  path: "/metodologiya",
+});
 
 export default function MethodologyPage() {
   return (
@@ -26,24 +28,24 @@ export default function MethodologyPage() {
       />
 
       <div className="wrap grid gap-12 py-16 lg:grid-cols-[260px_1fr] lg:gap-16">
-        <aside className="lg:sticky lg:top-28 lg:self-start">
+        <div className="lg:sticky lg:top-28 lg:self-start">
           <p className="eyebrow">Содержание</p>
           <ol className="mt-4 space-y-2 border-l border-line pl-4 text-[15px]">
             {directions.map((d) => (
               <li key={d.id}>
                 <a href={`#${d.id}`} className="block py-1 text-ink transition-colors hover:text-gold-deep">
-                  <span className="mr-2 font-display text-gold">{d.num}</span>
+                  <span className="mr-2 font-display text-gold-deep">{d.num}</span>
                   {d.title}
                 </a>
               </li>
             ))}
           </ol>
-        </aside>
+        </div>
 
         <div className="space-y-16">
           {directions.map((d) => (
             <article key={d.id} id={d.id} className="scroll-mt-28 border-t border-line pt-10 first:border-t-0 first:pt-0">
-              <p className="font-display text-[56px] leading-none text-gold">{d.num}</p>
+              <p className="font-display text-[56px] leading-none text-gold-text">{d.num}</p>
               <h2 className="mt-3 text-[32px] sm:text-[38px]">{d.title}</h2>
               <p className="mt-5 max-w-3xl text-[18px]">{d.summary}</p>
               {d.id === "diplom" && (
@@ -88,7 +90,7 @@ export default function MethodologyPage() {
             {METHOD_BLOCKS.map((bl) => (
               <div key={bl.id} id={`blok-${bl.id}`} className="scroll-mt-28">
                 <div className="flex items-baseline gap-4 border-b border-gold/50 pb-3">
-                  <span className="font-display text-[44px] leading-none text-gold">{bl.num}</span>
+                  <span className="font-display text-[44px] leading-none text-gold-text">{bl.num}</span>
                   <h3 className="text-[28px] sm:text-[32px]">{bl.title}</h3>
                 </div>
                 <p className="mt-4 max-w-3xl text-[16px]">{bl.lead}</p>

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { pageMeta } from "@/lib/seo";
 import DocumentPage from "@/components/DocumentPage";
 import { DISSERTATION as D, dissertationRows } from "@/lib/data/dissertation";
 
-export const metadata: Metadata = {
-  title: `Автореферат диссертации: ${D.title}`,
+export const metadata: Metadata = pageMeta({
+  title: `Автореферат: ${D.title}`,
   description: `${D.author}. ${D.title}. Автореферат диссертации на соискание учёной степени кандидата педагогических наук. ${D.city}, ${D.year}. Полный текст.`,
-};
+  path: "/nauka/avtoreferat",
+  type: "article",
+});
 
 export default function AvtoreferatPage() {
   return (

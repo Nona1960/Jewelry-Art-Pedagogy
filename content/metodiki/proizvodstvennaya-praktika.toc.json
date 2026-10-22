@@ -1,0 +1,212 @@
+[
+ {
+  "id": "1-vvedenie",
+  "text": "1. Введение",
+  "level": 2
+ },
+ {
+  "id": "2-aktualnost-issledovaniya",
+  "text": "2. Актуальность исследования",
+  "level": 2
+ },
+ {
+  "id": "3-cel-i-zadachi-metodicheskoy-razrabotki",
+  "text": "3. Цель и задачи методической разработки",
+  "level": 2
+ },
+ {
+  "id": "4-osnovnaya-pedagogicheskaya-ideya",
+  "text": "4. Основная педагогическая идея",
+  "level": 2
+ },
+ {
+  "id": "5-metodologicheskie-osnovaniya",
+  "text": "5. Методологические основания",
+  "level": 2
+ },
+ {
+  "id": "5-1-kompetentnostnyy-podhod",
+  "text": "5.1. Компетентностный подход",
+  "level": 3
+ },
+ {
+  "id": "5-2-deyatelnostnyy-podhod",
+  "text": "5.2. Деятельностный подход",
+  "level": 3
+ },
+ {
+  "id": "5-3-sistemnyy-podhod",
+  "text": "5.3. Системный подход",
+  "level": 3
+ },
+ {
+  "id": "5-4-praktiko-orientirovannyy-podhod",
+  "text": "5.4. Практико-ориентированный подход",
+  "level": 3
+ },
+ {
+  "id": "5-5-refleksivnyy-podhod",
+  "text": "5.5. Рефлексивный подход",
+  "level": 3
+ },
+ {
+  "id": "6-struktura-metodiki",
+  "text": "6. Структура методики",
+  "level": 2
+ },
+ {
+  "id": "etap-i-organizacionno-proektirovochnyy",
+  "text": "Этап I. Организационно-проектировочный",
+  "level": 3
+ },
+ {
+  "id": "etap-ii-podgotovitelno-tehnologicheskiy",
+  "text": "Этап II. Подготовительно-технологический",
+  "level": 3
+ },
+ {
+  "id": "etap-iii-formirovanie-konstruktivnyh-elementov",
+  "text": "Этап III. Формирование конструктивных элементов",
+  "level": 3
+ },
+ {
+  "id": "etap-iv-hudozhestvenno-konstruktivnaya-sborka",
+  "text": "Этап IV. Художественно-конструктивная сборка",
+  "level": 3
+ },
+ {
+  "id": "etap-v-izgotovlenie-funkcionalnogo-elementa",
+  "text": "Этап V. Изготовление функционального элемента",
+  "level": 3
+ },
+ {
+  "id": "etap-vi-otdelka-i-itogovyy-kontrol",
+  "text": "Этап VI. Отделка и итоговый контроль",
+  "level": 3
+ },
+ {
+  "id": "etap-vii-refleksivno-ocenochnyy",
+  "text": "Этап VII. Рефлексивно-оценочный",
+  "level": 3
+ },
+ {
+  "id": "7-metodicheskaya-razrabotka-prakticheskogo-modulya-izgotovle",
+  "text": "7. Методическая разработка практического модуля «Изготовление плетёного ювелирного браслета»",
+  "level": 2
+ },
+ {
+  "id": "8-metodika-pedagogicheskogo-soprovozhdeniya",
+  "text": "8. Методика педагогического сопровождения",
+  "level": 2
+ },
+ {
+  "id": "9-sistema-kontrolya-kachestva",
+  "text": "9. Система контроля качества",
+  "level": 2
+ },
+ {
+  "id": "9-1-kontrol-metallicheskih-zagotovok",
+  "text": "9.1. Контроль металлических заготовок",
+  "level": 3
+ },
+ {
+  "id": "9-2-kontrol-zvenev",
+  "text": "9.2. Контроль звеньев",
+  "level": 3
+ },
+ {
+  "id": "9-3-kontrol-pleteniya",
+  "text": "9.3. Контроль плетения",
+  "level": 3
+ },
+ {
+  "id": "9-4-kontrol-zamkovogo-mehanizma",
+  "text": "9.4. Контроль замкового механизма",
+  "level": 3
+ },
+ {
+  "id": "9-5-kontrol-otdelki",
+  "text": "9.5. Контроль отделки",
+  "level": 3
+ },
+ {
+  "id": "10-diagnostika-professionalnyh-kompetenciy",
+  "text": "10. Диагностика профессиональных компетенций",
+  "level": 2
+ },
+ {
+  "id": "10-1-kriterii-urovnya-podgotovki",
+  "text": "10.1. Критерии уровня подготовки",
+  "level": 3
+ },
+ {
+  "id": "10-2-obyazatelnoe-uslovie-funkcionalnoy-prigodnosti",
+  "text": "10.2. Обязательное условие функциональной пригодности",
+  "level": 3
+ },
+ {
+  "id": "11-metodika-formirovaniya-professionalnoy-samostoyatelnosti",
+  "text": "11. Методика формирования профессиональной самостоятельности",
+  "level": 2
+ },
+ {
+  "id": "12-organizaciya-refleksivnoy-deyatelnosti",
+  "text": "12. Организация рефлексивной деятельности",
+  "level": 2
+ },
+ {
+  "id": "13-usloviya-realizacii-metodiki",
+  "text": "13. Условия реализации методики",
+  "level": 2
+ },
+ {
+  "id": "14-ozhidaemye-pedagogicheskie-rezultaty",
+  "text": "14. Ожидаемые педагогические результаты",
+  "level": 2
+ },
+ {
+  "id": "15-perspektivy-pedagogicheskoy-aprobacii",
+  "text": "15. Перспективы педагогической апробации",
+  "level": 2
+ },
+ {
+  "id": "16-zaklyuchenie",
+  "text": "16. Заключение",
+  "level": 2
+ },
+ {
+  "id": "metodicheskie-prilozheniya",
+  "text": "Методические приложения",
+  "level": 2
+ },
+ {
+  "id": "prilozhenie-1-individualnaya-tehnologicheskaya-karta",
+  "text": "Приложение 1. Индивидуальная технологическая карта",
+  "level": 3
+ },
+ {
+  "id": "prilozhenie-2-list-promezhutochnogo-kontrolya",
+  "text": "Приложение 2. Лист промежуточного контроля",
+  "level": 3
+ },
+ {
+  "id": "prilozhenie-3-diagnosticheskaya-karta-professionalnyh-kompet",
+  "text": "Приложение 3. Диагностическая карта профессиональных компетенций",
+  "level": 3
+ },
+ {
+  "id": "prilozhenie-4-forma-professionalnoy-refleksii",
+  "text": "Приложение 4. Форма профессиональной рефлексии",
+  "level": 3
+ },
+ {
+  "id": "prilozhenie-5-rekomenduemye-napravleniya-dalneyshih-metodich",
+  "text": "Приложение 5. Рекомендуемые направления дальнейших методических разработок",
+  "level": 3
+ },
+ {
+  "id": "literatura",
+  "text": "Литература",
+  "level": 2
+ }
+]

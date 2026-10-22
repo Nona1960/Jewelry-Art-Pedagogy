@@ -100,9 +100,9 @@ export default function DocumentPage({
         </div>
       </header>
       <div className="wrap grid gap-12 py-14 lg:grid-cols-[280px_1fr] lg:gap-16">
-        <aside className="min-w-0 lg:sticky lg:top-28 lg:self-start">
+        <div className="min-w-0 lg:sticky lg:top-28 lg:self-start">
           <Toc toc={toc} />
-        </aside>
+        </div>
         <div className="min-w-0">
           <TextBody blocks={blocks} scanDir={`/scans/${name}`} title={title} />
         </div>

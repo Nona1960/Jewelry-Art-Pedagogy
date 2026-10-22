@@ -1,0 +1,112 @@
+[
+ {
+  "id": "1-suschnost-i-osnovnye-idei-metodiki",
+  "text": "1. Сущность и основные идеи методики",
+  "level": 2
+ },
+ {
+  "id": "2-cel-zadachi-i-oblast-primeneniya",
+  "text": "2. Цель, задачи и область применения",
+  "level": 2
+ },
+ {
+  "id": "3-konstruktivnye-osobennosti-metodiki",
+  "text": "3. Конструктивные особенности методики",
+  "level": 2
+ },
+ {
+  "id": "4-pyatietapnyy-algoritm-obucheniya",
+  "text": "4. Пятиэтапный алгоритм обучения",
+  "level": 2
+ },
+ {
+  "id": "4-1-etap-i-orientaciya",
+  "text": "4.1. Этап I. Ориентация",
+  "level": 3
+ },
+ {
+  "id": "4-2-etap-ii-analiz",
+  "text": "4.2. Этап II. Анализ",
+  "level": 3
+ },
+ {
+  "id": "4-3-etap-iii-praktika",
+  "text": "4.3. Этап III. Практика",
+  "level": 3
+ },
+ {
+  "id": "4-4-etap-iv-integraciya",
+  "text": "4.4. Этап IV. Интеграция",
+  "level": 3
+ },
+ {
+  "id": "4-5-etap-v-refleksiya",
+  "text": "4.5. Этап V. Рефлексия",
+  "level": 3
+ },
+ {
+  "id": "5-centralnoe-kompleksnoe-zadanie",
+  "text": "5. Центральное комплексное задание",
+  "level": 2
+ },
+ {
+  "id": "6-sistema-diagnostiki-i-izmereniya",
+  "text": "6. Система диагностики и измерения",
+  "level": 2
+ },
+ {
+  "id": "6-1-pravila-vystavleniya-ballov",
+  "text": "6.1. Правила выставления баллов",
+  "level": 3
+ },
+ {
+  "id": "6-2-primer-analiticheskoy-obratnoy-svyazi",
+  "text": "6.2. Пример аналитической обратной связи",
+  "level": 3
+ },
+ {
+  "id": "7-organizaciya-pedagogicheskoy-raboty",
+  "text": "7. Организация педагогической работы",
+  "level": 2
+ },
+ {
+  "id": "8-primer-primeneniya-metodiki",
+  "text": "8. Пример применения методики",
+  "level": 2
+ },
+ {
+  "id": "9-ocenka-rezultativnosti-i-aprobaciya",
+  "text": "9. Оценка результативности и апробация",
+  "level": 2
+ },
+ {
+  "id": "10-usloviya-adaptacii-i-ogranicheniya",
+  "text": "10. Условия адаптации и ограничения",
+  "level": 2
+ },
+ {
+  "id": "11-itogovye-polozheniya",
+  "text": "11. Итоговые положения",
+  "level": 2
+ },
+ {
+  "id": "prilozhenie-a-shablon-karty-hudozhestvenno-tehnologicheskih-",
+  "text": "Приложение А. Шаблон карты художественно-технологических решений",
+  "level": 3
+ },
+ {
+  "id": "prilozhenie-b-karta-nablyudeniy-i-razmyshleniy",
+  "text": "Приложение Б. Карта наблюдений и размышлений",
+  "level": 3
+ },
+ {
+  "id": "prilozhenie-v-individualnaya-diagnosticheskaya-karta",
+  "text": "Приложение В. Индивидуальная диагностическая карта",
+  "level": 3
+ },
+ {
+  "id": "bibliograficheskoe-primechanie",
+  "text": "Библиографическое примечание",
+  "level": 2
+ }
+]

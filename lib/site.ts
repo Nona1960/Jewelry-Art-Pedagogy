@@ -2,7 +2,8 @@ export const SITE = {
   name: "Педагогика ювелирного искусства",
   tagline: "Авторская методология Дмитрия Дронова",
   motto: "Научные исследования · Методология образования · Художественная практика",
-  url: "https://pedagogika-yuvelirnogo-iskusstva.vercel.app",
+  /** Адрес сайта: задаётся переменной окружения NEXT_PUBLIC_SITE_URL на Vercel (по умолчанию — адрес проекта Vercel). */
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://jewelry-art-pedagogy.vercel.app").replace(/\/$/, ""),
   /** Электронная почта Дмитрия Дронова для подвала. Пока пусто — строка в подвале скрыта. */
   email: "",
   copyrightHolder: "Дмитрий Дронов",
