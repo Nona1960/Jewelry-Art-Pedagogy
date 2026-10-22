@@ -20,3 +20,9 @@ Scientific and educational website dedicated to the original methodology of Dmit
 npm install
 npm run dev
 ```
+
+## Полные тексты (диссертация, автореферат)
+- `content/dissertaciya.md`, `content/avtoreferat.md` — текст, распознанный со сканов (OCR, Tesseract rus). Разметка: `<!-- p:N -->` — начало страницы N оригинала, `{{p:N}}` — переход страницы внутри абзаца, `## / ###` — заголовки, `![scan](p:N)` — вместо текста показывается скан страницы из `public/scans/<имя>/p-NNN.webp`.
+- `public/docs/` — облегчённые PDF для скачивания.
+- `lib/data/dissertation.ts` — сведения о диссертации и аннотация.
+- `tools/ocr/` — скрипты распознавания и очистки текста (повторное использование для новых сканов).

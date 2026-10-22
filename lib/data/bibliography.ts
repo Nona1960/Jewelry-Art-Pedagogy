@@ -1,6 +1,6 @@
 import raw from "./bibliography.json";
 
-export type BibSection = "articles" | "monographs" | "teaching" | "unverified";
+export type BibSection = "articles" | "monographs" | "teaching" | "dissertation" | "unverified";
 
 export interface BibEntry {
   /** Номер записи в единой библиографии */

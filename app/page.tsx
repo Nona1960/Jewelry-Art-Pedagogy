@@ -8,7 +8,7 @@ import { articles, byNumbers, monographs, MAIN_MONOGRAPH } from "@/lib/data/bibl
 import { PubList, SectionTitle, WorkCard } from "@/components/ui";
 
 export default function Home() {
-  const selected = byNumbers([MAIN_MONOGRAPH, 45, 44, 41]);
+  const selected = byNumbers([89, MAIN_MONOGRAPH, 45, 44]);
   return (
     <>
       {/* Первый экран */}

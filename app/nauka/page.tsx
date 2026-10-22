@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { DISSERTATION as D } from "@/lib/data/dissertation";
 import { PageHeader, Pending, PubList, SectionTitle } from "@/components/ui";
 import {
   articles,
@@ -62,17 +64,36 @@ export default function SciencePage() {
           <section>
             <SectionTitle id="dissertaciya" eyebrow="Учёная степень" title="Кандидатская диссертация" />
             <div className="card mt-8 p-6 sm:p-8">
-              <dl className="grid gap-x-8 gap-y-3 sm:grid-cols-[180px_1fr]">
-                <dt className="text-[13px] uppercase tracking-[0.15em] text-gold-deep">Автор</dt>
-                <dd>Дронов Дмитрий Сергеевич</dd>
-                <dt className="text-[13px] uppercase tracking-[0.15em] text-gold-deep">Степень</dt>
-                <dd>Кандидат педагогических наук</dd>
+              <h3 className="text-[28px] leading-snug">«{D.title}»</h3>
+              <dl className="mt-6 grid gap-x-8 gap-y-3 text-[16px] sm:grid-cols-[200px_1fr]">
+                <dt className="text-[13px] uppercase tracking-[0.15em] text-gold-deep">Год</dt>
+                <dd>{D.year}</dd>
+                <dt className="text-[13px] uppercase tracking-[0.15em] text-gold-deep">Описание</dt>
+                <dd>
+                  {D.author}. {D.title} : дис. … канд. пед. наук : {D.specialty.split(" ")[0]}. — {D.city}, {D.year}. —
+                  177 с.
+                </dd>
+                <dt className="text-[13px] uppercase tracking-[0.15em] text-gold-deep">Организация</dt>
+                <dd>{D.institution}</dd>
+                <dt className="text-[13px] uppercase tracking-[0.15em] text-gold-deep">Научный руководитель</dt>
+                <dd>{D.supervisor}</dd>
               </dl>
-              <div className="mt-6">
-                <Pending>
-                  Аннотация, библиографическое описание и электронная версия диссертации будут размещены после загрузки
-                  текста.
-                </Pending>
+              <h4 className="mt-8 font-serif text-[13px] uppercase tracking-[0.2em] text-gold-deep">Аннотация</h4>
+              <div className="mt-3 space-y-3 text-[16px]">
+                {D.annotation.map((p) => (
+                  <p key={p}>{p}</p>
+                ))}
+              </div>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Link href="/nauka/dissertaciya" className="btn">
+                  Читать полный текст
+                </Link>
+                <Link href="/nauka/avtoreferat" className="btn-ghost">
+                  Автореферат
+                </Link>
+                <a href={D.pdf.dissertation} className="btn-ghost" target="_blank" rel="noopener">
+                  PDF диссертации
+                </a>
               </div>
             </div>
           </section>
