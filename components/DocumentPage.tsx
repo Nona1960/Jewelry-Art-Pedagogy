@@ -19,6 +19,7 @@ export default function DocumentPage({
   actions,
   cover,
   annotation,
+  fromSource = false,
 }: {
   name: string;
   eyebrow: string;
@@ -28,6 +29,7 @@ export default function DocumentPage({
   actions: DocAction[];
   cover?: { src: string; width: number; height: number; alt: string };
   annotation?: string[];
+  fromSource?: boolean;
 }) {
   const { blocks, toc, words } = loadFullText(name);
   return (
@@ -77,8 +79,9 @@ export default function DocumentPage({
               )}
             </div>
             <p className="mt-6 max-w-3xl text-[14px] italic text-ink-soft">
-              Текст ниже распознан со сканов печатного оригинала ({words.toLocaleString("ru-RU")} слов). Отметки «с. N»
-              соответствуют страницам оригинала; схемы и таблицы приведены сканами. При цитировании сверяйтесь с PDF.
+              {fromSource
+                ? `Текст ниже взят из электронного оригинала издания (${words.toLocaleString("ru-RU")} слов). Отметки «с. N» соответствуют страницам книги.`
+                : `Текст ниже распознан со сканов печатного оригинала (${words.toLocaleString("ru-RU")} слов). Отметки «с. N» соответствуют страницам оригинала; схемы и таблицы приведены сканами. При цитировании сверяйтесь с PDF.`}
             </p>
           </div>
           {cover && (

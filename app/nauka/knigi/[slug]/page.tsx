@@ -31,6 +31,7 @@ export default async function BookPage({ params }: Props) {
       title={b.title}
       rows={bookRows(b)}
       annotation={b.annotation}
+      fromSource={b.fromSource}
       crumb={{ href: "/nauka#monografii", label: "Монографии" }}
       cover={{ ...b.cover, alt: `Обложка книги Д. С. Дронова «${b.title}», ${b.year}` }}
       actions={[{ href: b.pdf, label: `Скачать книгу · PDF, ${b.pages} с.`, primary: true, file: true }]}
