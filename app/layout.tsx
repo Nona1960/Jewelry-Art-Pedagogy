@@ -12,6 +12,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import HomeButton from "@/components/HomeButton";
 import { SITE } from "@/lib/site";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
@@ -65,6 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <HomeButton />
         </main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
