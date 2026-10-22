@@ -3,7 +3,7 @@ import path from "node:path";
 
 export type Block =
   | { kind: "page"; n: number }
-  | { kind: "h2" | "h3"; id: string; text: string }
+  | { kind: "h2" | "h3" | "h4"; id: string; text: string }
   | { kind: "p"; parts: (string | { page: number })[] }
   | { kind: "scan"; n: number };
 
@@ -51,6 +51,8 @@ export function loadFullText(name: string) {
       blocks.push({ kind: "page", n: Number(m[1]) });
     } else if ((m = t.match(/^!\[scan\]\(p:(\d+)\)$/))) {
       blocks.push({ kind: "scan", n: Number(m[1]) });
+    } else if ((m = t.match(/^####\s+(.+)$/))) {
+      blocks.push({ kind: "h4", id: slug(m[1].trim(), used), text: m[1].trim() });
     } else if ((m = t.match(/^(#{2,3})\s+(.+)$/))) {
       const level = m[1].length as 2 | 3;
       const text = m[2].trim();

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import DocumentPage from "@/components/DocumentPage";
-import { DISSERTATION as D } from "@/lib/data/dissertation";
+import { DISSERTATION as D, dissertationRows } from "@/lib/data/dissertation";
 
 export const metadata: Metadata = {
   title: `Диссертация: ${D.title}`,
@@ -11,11 +11,14 @@ export default function DissertationPage() {
   return (
     <DocumentPage
       name="dissertaciya"
-      kind="Диссертация на соискание учёной степени кандидата педагогических наук"
-      pdf={D.pdf.dissertation}
-      pdfLabel="Скачать диссертацию"
-      pages={177}
-      other={{ href: "/nauka/avtoreferat", label: "Автореферат" }}
+      eyebrow={`Диссертация на соискание учёной степени кандидата педагогических наук · ${D.city}, ${D.year}`}
+      title={D.title}
+      rows={dissertationRows}
+      crumb={{ href: "/nauka#dissertaciya", label: "Диссертация" }}
+      actions={[
+        { href: D.pdf.dissertation, label: "Скачать диссертацию · PDF, 177 с.", primary: true, file: true },
+        { href: "/nauka/avtoreferat", label: "Автореферат" },
+      ]}
     />
   );
 }

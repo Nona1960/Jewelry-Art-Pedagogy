@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import DocumentPage from "@/components/DocumentPage";
-import { DISSERTATION as D } from "@/lib/data/dissertation";
+import { DISSERTATION as D, dissertationRows } from "@/lib/data/dissertation";
 
 export const metadata: Metadata = {
   title: `Автореферат диссертации: ${D.title}`,
@@ -11,11 +11,14 @@ export default function AvtoreferatPage() {
   return (
     <DocumentPage
       name="avtoreferat"
-      kind="Автореферат диссертации"
-      pdf={D.pdf.avtoreferat}
-      pdfLabel="Скачать автореферат"
-      pages={24}
-      other={{ href: "/nauka/dissertaciya", label: "Полный текст диссертации" }}
+      eyebrow={`Автореферат диссертации · ${D.city}, ${D.year}`}
+      title={D.title}
+      rows={dissertationRows}
+      crumb={{ href: "/nauka#dissertaciya", label: "Диссертация" }}
+      actions={[
+        { href: D.pdf.avtoreferat, label: "Скачать автореферат · PDF, 24 с.", primary: true, file: true },
+        { href: "/nauka/dissertaciya", label: "Полный текст диссертации" },
+      ]}
     />
   );
 }

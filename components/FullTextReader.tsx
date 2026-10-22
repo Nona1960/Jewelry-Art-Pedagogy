@@ -26,7 +26,7 @@ function PageMark({ n, inline = false }: { n: number; inline?: boolean }) {
 
 export function TextBody({ blocks, scanDir, title }: { blocks: Block[]; scanDir: string; title: string }) {
   return (
-    <div className="max-w-[46rem] text-[17px] leading-[1.8] text-ink-deep/95">
+    <div className="max-w-[46rem] text-[17px] leading-[1.8] text-ink-deep/95 [overflow-wrap:anywhere]">
       {blocks.map((b, i) => {
         switch (b.kind) {
           case "page":
@@ -42,6 +42,16 @@ export function TextBody({ blocks, scanDir, title }: { blocks: Block[]; scanDir:
               <h3 key={i} id={b.id} className="mb-4 mt-10 scroll-mt-28 text-[25px] sm:text-[27px]">
                 {b.text}
               </h3>
+            );
+          case "h4":
+            return (
+              <h4
+                key={i}
+                id={b.id}
+                className="mb-3 mt-8 scroll-mt-28 font-serif text-[15px] font-bold uppercase tracking-[0.08em] text-gold-deep"
+              >
+                {b.text}
+              </h4>
             );
           case "scan":
             return (

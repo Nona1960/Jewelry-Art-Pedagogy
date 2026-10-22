@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import { MONOGRAPH_2015 as M15 } from "@/lib/data/monograph2015";
 import { DISSERTATION as D } from "@/lib/data/dissertation";
 import { PageHeader, Pending, PubList, SectionTitle } from "@/components/ui";
 import {
@@ -115,7 +117,38 @@ export default function SciencePage() {
 
           <section>
             <SectionTitle id="monografii" eyebrow="Книги" title="Монографии и авторские брошюры" />
-            <div className="mt-8">
+            <div className="card mt-8 grid gap-6 p-6 sm:grid-cols-[150px_1fr] sm:p-8">
+              <Link href="/nauka/monografiya-2015" className="block">
+                <Image
+                  src={M15.cover.src}
+                  alt={`Обложка монографии «${M15.title}»`}
+                  width={M15.cover.width}
+                  height={M15.cover.height}
+                  sizes="150px"
+                  className="h-auto w-full max-w-[150px] border border-line"
+                />
+              </Link>
+              <div>
+                <p className="eyebrow">
+                  Монография · {M15.city}, {M15.year} · полный текст
+                </p>
+                <h3 className="mt-2 text-[26px] leading-snug">
+                  <Link href="/nauka/monografiya-2015" className="hover:text-gold-deep">
+                    «{M15.title}»
+                  </Link>
+                </h3>
+                <p className="mt-3 text-[16px]">{M15.annotation[0]}</p>
+                <div className="mt-5 flex flex-wrap gap-3">
+                  <Link href="/nauka/monografiya-2015" className="btn">
+                    Читать полный текст
+                  </Link>
+                  <a href={M15.pdf} className="btn-ghost" target="_blank" rel="noopener">
+                    PDF
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="mt-6">
               <PubList items={monographs} />
             </div>
           </section>

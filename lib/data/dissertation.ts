@@ -27,3 +27,13 @@ export const DISSERTATION = {
     avtoreferat: "/docs/dronov-avtoreferat-2009.pdf",
   },
 };
+
+export const dissertationRows: [string, string][] = [
+  ["Автор", DISSERTATION.author],
+  ["Специальность", DISSERTATION.specialty],
+  ["Организация", DISSERTATION.institution],
+  ["Научный руководитель", DISSERTATION.supervisor],
+  ["Официальные оппоненты", DISSERTATION.opponents.join("; ")],
+  ["Ведущая организация", DISSERTATION.leadingOrganization],
+  ["Защита", DISSERTATION.defense],
+];
