@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Toc } from "@/components/FullTextReader";
-import { doiUrl, getMethod, METHODS, METHODS_YEAR } from "@/lib/data/methods";
+import { doiUrl, getMethod, METHOD_BLOCKS, METHODS, METHODS_YEAR } from "@/lib/data/methods";
 import { loadMethod } from "@/lib/methodContent";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -28,7 +28,10 @@ export default async function MethodPage({ params }: Props) {
   if (!m) notFound();
   const { html, toc, meta } = loadMethod(slug);
   const title = m.title ?? meta.title;
-  const cite = `Дронов Д. С. ${title}. — Zenodo, ${METHODS_YEAR}. — DOI: ${m.doi}`;
+  const cite = m.doi
+    ? `Дронов Д. С. ${title}. — Zenodo, ${METHODS_YEAR}. — DOI: ${m.doi}`
+    : `Дронов Д. С. ${title}. — ${METHODS_YEAR}.`;
+  const block = METHOD_BLOCKS.find((b) => b.id === m.block);
   return (
     <article>
       <header className="border-b border-line">
@@ -42,20 +45,27 @@ export default async function MethodPage({ params }: Props) {
               Методики обучения
             </Link>
           </nav>
-          <p className="eyebrow mt-8">{m.course ?? "Методика обучения"}</p>
+          <p className="eyebrow mt-8">
+            {block ? `${block.num}. ${block.title}` : "Методика обучения"}
+          </p>
+          {m.course && <p className="mt-2 text-[15px] text-ink">{m.course}</p>}
           <h1 className="mt-4 max-w-5xl text-[34px] leading-[1.12] sm:text-[48px]">{title}</h1>
           {meta.subtitle && <p className="mt-4 max-w-4xl font-display text-[22px] italic text-gold-deep">{meta.subtitle}</p>}
           <div className="rule mt-6" />
           <dl className="mt-8 grid max-w-5xl gap-x-8 gap-y-3 text-[15px] sm:grid-cols-[210px_1fr]">
             <dt className="text-[12px] uppercase leading-relaxed tracking-[0.15em] text-gold-deep">Автор</dt>
             <dd>Дронов Дмитрий Сергеевич</dd>
-            <dt className="text-[12px] uppercase leading-relaxed tracking-[0.15em] text-gold-deep">Публикация</dt>
-            <dd>
-              Zenodo, {METHODS_YEAR} ·{" "}
-              <a href={doiUrl(m.doi)} className="link" target="_blank" rel="noopener">
-                DOI: {m.doi}
-              </a>
-            </dd>
+            {m.doi && (
+              <>
+                <dt className="text-[12px] uppercase leading-relaxed tracking-[0.15em] text-gold-deep">Публикация</dt>
+                <dd>
+                  Zenodo, {METHODS_YEAR} ·{" "}
+                  <a href={doiUrl(m.doi)} className="link" target="_blank" rel="noopener">
+                    DOI: {m.doi}
+                  </a>
+                </dd>
+              </>
+            )}
             {meta.keywords && (
               <>
                 <dt className="text-[12px] uppercase leading-relaxed tracking-[0.15em] text-gold-deep">Ключевые слова</dt>
@@ -76,10 +86,12 @@ export default async function MethodPage({ params }: Props) {
             <p className="mt-1 select-all">{cite}</p>
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={doiUrl(m.doi)} className="btn" target="_blank" rel="noopener">
-              Открыть в Zenodo
-            </a>
-            <Link href="/metodologiya#metodiki" className="btn-ghost">
+            {m.doi && (
+              <a href={doiUrl(m.doi)} className="btn" target="_blank" rel="noopener">
+                Открыть в Zenodo
+              </a>
+            )}
+            <Link href="/metodologiya#metodiki" className={m.doi ? "btn-ghost" : "btn"}>
               Все методики
             </Link>
           </div>

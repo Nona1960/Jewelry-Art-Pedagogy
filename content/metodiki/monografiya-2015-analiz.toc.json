@@ -1,0 +1,157 @@
+[
+ {
+  "id": "1-vvedenie",
+  "text": "1. Введение",
+  "level": 2
+ },
+ {
+  "id": "2-cel-obekt-predmet-i-metody-issledovaniya",
+  "text": "2. Цель, объект, предмет и методы исследования",
+  "level": 2
+ },
+ {
+  "id": "3-aktualnost-nauchnoy-problemy",
+  "text": "3. Актуальность научной проблемы",
+  "level": 2
+ },
+ {
+  "id": "3-1-protivorechie-mezhdu-sohraneniem-tradiciy-i-tehnologiche",
+  "text": "3.1. Противоречие между сохранением традиций и технологическим обновлением",
+  "level": 3
+ },
+ {
+  "id": "3-2-protivorechie-mezhdu-hudozhestvennoy-podgotovkoy-i-obsch",
+  "text": "3.2. Противоречие между художественной подготовкой и общественными потребностями",
+  "level": 3
+ },
+ {
+  "id": "3-3-protivorechie-mezhdu-otdelnymi-uchebnymi-disciplinami-i-",
+  "text": "3.3. Противоречие между отдельными учебными дисциплинами и целостностью профессии",
+  "level": 3
+ },
+ {
+  "id": "3-4-protivorechie-mezhdu-individualnym-masterstvom-i-kulturn",
+  "text": "3.4. Противоречие между индивидуальным мастерством и культурной ответственностью",
+  "level": 3
+ },
+ {
+  "id": "4-yuvelirnaya-kultura-kak-predmet-sistemnogo-nauchnogo-anali",
+  "text": "4. Ювелирная культура как предмет системного научного анализа",
+  "level": 2
+ },
+ {
+  "id": "5-tradiciya-i-innovaciya-kak-vzaimosvyazannye-mehanizmy-razv",
+  "text": "5. Традиция и инновация как взаимосвязанные механизмы развития",
+  "level": 2
+ },
+ {
+  "id": "6-vneshnie-i-vnutrennie-zakonomernosti-professionalnogo-obra",
+  "text": "6. Внешние и внутренние закономерности профессионального образования",
+  "level": 2
+ },
+ {
+  "id": "6-1-vneshnie-zakonomernosti",
+  "text": "6.1. Внешние закономерности",
+  "level": 3
+ },
+ {
+  "id": "6-2-vnutrennie-zakonomernosti",
+  "text": "6.2. Внутренние закономерности",
+  "level": 3
+ },
+ {
+  "id": "6-3-nauchnoe-znachenie-sistematizacii-zakonomernostey",
+  "text": "6.3. Научное значение систематизации закономерностей",
+  "level": 3
+ },
+ {
+  "id": "7-koncepciya-professionalnogo-obrazovaniya-kak-rezultat-teor",
+  "text": "7. Концепция профессионального образования как результат теоретического обобщения",
+  "level": 2
+ },
+ {
+  "id": "8-mnogourovnevoe-professionalnoe-obrazovanie-hudozhnika-yuve",
+  "text": "8. Многоуровневое профессиональное образование художника-ювелира",
+  "level": 2
+ },
+ {
+  "id": "9-sociokulturnaya-adaptaciya-kak-mehanizm-razvitiya-obrazova",
+  "text": "9. Социокультурная адаптация как механизм развития образовательной системы",
+  "level": 2
+ },
+ {
+  "id": "10-vyyavlenie-konceptualnoy-nauchnoy-novizny-monografii",
+  "text": "10. Выявление концептуальной научной новизны монографии",
+  "level": 2
+ },
+ {
+  "id": "10-1-rasshirenie-predmeta-professionalnogo-yuvelirnogo-obraz",
+  "text": "10.1. Расширение предмета профессионального ювелирного образования",
+  "level": 3
+ },
+ {
+  "id": "10-2-sistemnoe-soedinenie-kulturnyh-obrazovatelnyh-i-proizvo",
+  "text": "10.2. Системное соединение культурных, образовательных и производственных факторов",
+  "level": 3
+ },
+ {
+  "id": "10-3-razrabotka-sociokulturnoy-koncepcii-professionalnogo-ob",
+  "text": "10.3. Разработка социокультурной концепции профессионального образования",
+  "level": 3
+ },
+ {
+  "id": "10-4-obosnovanie-vzaimosvyazi-vneshnih-i-vnutrennih-zakonome",
+  "text": "10.4. Обоснование взаимосвязи внешних и внутренних закономерностей обучения",
+  "level": 3
+ },
+ {
+  "id": "10-5-konceptualnoe-obosnovanie-mnogourovnevoy-podgotovki",
+  "text": "10.5. Концептуальное обоснование многоуровневой подготовки",
+  "level": 3
+ },
+ {
+  "id": "10-6-rassmotrenie-sociokulturnoy-adaptacii-kak-mehanizma-pro",
+  "text": "10.6. Рассмотрение социокультурной адаптации как механизма профессионального развития",
+  "level": 3
+ },
+ {
+  "id": "11-teoreticheskaya-znachimost-issledovaniya",
+  "text": "11. Теоретическая значимость исследования",
+  "level": 2
+ },
+ {
+  "id": "12-prakticheskaya-i-nauchno-metodicheskaya-znachimost",
+  "text": "12. Практическая и научно-методическая значимость",
+  "level": 2
+ },
+ {
+  "id": "13-znachenie-monografii-dlya-istorii-otechestvennoy-hudozhes",
+  "text": "13. Значение монографии для истории отечественной художественной педагогики",
+  "level": 2
+ },
+ {
+  "id": "14-aktualnost-nauchnyh-polozheniy-v-sovremennyh-usloviyah",
+  "text": "14. Актуальность научных положений в современных условиях",
+  "level": 2
+ },
+ {
+  "id": "15-ogranicheniya-issledovaniya-i-napravleniya-dalneyshego-iz",
+  "text": "15. Ограничения исследования и направления дальнейшего изучения",
+  "level": 2
+ },
+ {
+  "id": "16-zaklyuchenie",
+  "text": "16. Заключение",
+  "level": 2
+ },
+ {
+  "id": "osnovnoy-istochnik",
+  "text": "Основной источник",
+  "level": 2
+ },
+ {
+  "id": "dopolnitelnye-teoreticheskie-istochniki-rassmatrivaemye-v-mo",
+  "text": "Дополнительные теоретические источники, рассматриваемые в монографии",
+  "level": 2
+ }
+]

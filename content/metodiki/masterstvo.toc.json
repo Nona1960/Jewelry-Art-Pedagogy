@@ -1,0 +1,272 @@
+[
+ {
+  "id": "1-vvedenie",
+  "text": "1. Введение",
+  "level": 2
+ },
+ {
+  "id": "2-cel-zadachi-i-metodologiya-issledovaniya",
+  "text": "2. Цель, задачи и методология исследования",
+  "level": 2
+ },
+ {
+  "id": "3-obschaya-harakteristika-obrazovatelnyh-programm",
+  "text": "3. Общая характеристика образовательных программ",
+  "level": 2
+ },
+ {
+  "id": "3-1-programma-masterstvo",
+  "text": "3.1. Программа «Мастерство»",
+  "level": 3
+ },
+ {
+  "id": "3-2-programma-sovershenstvovanie-masterstva",
+  "text": "3.2. Программа «Совершенствование мастерства»",
+  "level": 3
+ },
+ {
+  "id": "3-3-sravnitelnaya-tablica",
+  "text": "3.3. Сравнительная таблица",
+  "level": 3
+ },
+ {
+  "id": "4-professionalnoe-masterstvo-kak-integralnaya-kompetenciya",
+  "text": "4. Профессиональное мастерство как интегральная компетенция",
+  "level": 2
+ },
+ {
+  "id": "5-pervaya-stupen-osvoenie-tehnologicheskoy-posledovatelnosti",
+  "text": "5. Первая ступень: освоение технологической последовательности",
+  "level": 2
+ },
+ {
+  "id": "5-1-metodicheskiy-princip-posledovatelnosti",
+  "text": "5.1. Методический принцип последовательности",
+  "level": 3
+ },
+ {
+  "id": "5-2-rol-demonstracii-i-samostoyatelnogo-vypolneniya",
+  "text": "5.2. Роль демонстрации и самостоятельного выполнения",
+  "level": 3
+ },
+ {
+  "id": "6-pervoe-prakticheskoe-zadanie-kolco-kosichka",
+  "text": "6. Первое практическое задание: кольцо «косичка»",
+  "level": 2
+ },
+ {
+  "id": "6-1-obrazovatelnoe-znachenie",
+  "text": "6.1. Образовательное значение",
+  "level": 3
+ },
+ {
+  "id": "6-2-rekomenduemaya-struktura-zanyatiya",
+  "text": "6.2. Рекомендуемая структура занятия",
+  "level": 3
+ },
+ {
+  "id": "7-vtoroe-prakticheskoe-zadanie-kolco-so-shveycarskoy-zakrepk",
+  "text": "7. Второе практическое задание: кольцо со «швейцарской» закрепкой и фактурированием",
+  "level": 2
+ },
+ {
+  "id": "7-1-pedagogicheskoe-znachenie-sochetaniya-operaciy",
+  "text": "7.1. Педагогическое значение сочетания операций",
+  "level": 3
+ },
+ {
+  "id": "7-2-razvitie-diagnosticheskogo-myshleniya",
+  "text": "7.2. Развитие диагностического мышления",
+  "level": 3
+ },
+ {
+  "id": "8-vtoraya-stupen-sovershenstvovanie-zakrepki-i-povyshenie-sl",
+  "text": "8. Вторая ступень: совершенствование закрепки и повышение сложности",
+  "level": 2
+ },
+ {
+  "id": "9-trete-prakticheskoe-zadanie-kolco-s-zakrepkoy-rybiy-hvost",
+  "text": "9. Третье практическое задание: кольцо с закрепкой «рыбий хвост»",
+  "level": 2
+ },
+ {
+  "id": "9-1-metodicheskoe-znachenie",
+  "text": "9.1. Методическое значение",
+  "level": 3
+ },
+ {
+  "id": "9-2-prakticheskoe-uprazhnenie-predupredi-defekt",
+  "text": "9.2. Практическое упражнение «Предупреди дефект»",
+  "level": 3
+ },
+ {
+  "id": "10-chetvertoe-prakticheskoe-zadanie-sergi-s-kamnyami-razlich",
+  "text": "10. Четвёртое практическое задание: серьги с камнями различных форм",
+  "level": 2
+ },
+ {
+  "id": "10-1-perehod-ot-povtoreniya-k-variativnosti",
+  "text": "10.1. Переход от повторения к вариативности",
+  "level": 3
+ },
+ {
+  "id": "10-2-formirovanie-konstruktivnoy-gibkosti",
+  "text": "10.2. Формирование конструктивной гибкости",
+  "level": 3
+ },
+ {
+  "id": "11-progress-professionalnogo-razvitiya-v-dvuh-programmah",
+  "text": "11. Прогресс профессионального развития в двух программах",
+  "level": 2
+ },
+ {
+  "id": "12-kompetentnostnaya-osnova-obrazovatelnogo-kompleksa",
+  "text": "12. Компетентностная основа образовательного комплекса",
+  "level": 2
+ },
+ {
+  "id": "matrica-formirovaniya-kompetenciy",
+  "text": "Матрица формирования компетенций",
+  "level": 3
+ },
+ {
+  "id": "13-integrirovannaya-metodika-professionalnogo-obucheniya",
+  "text": "13. Интегрированная методика профессионального обучения",
+  "level": 2
+ },
+ {
+  "id": "uroven-i-tehnologicheskaya-gramotnost",
+  "text": "Уровень I. Технологическая грамотность",
+  "level": 3
+ },
+ {
+  "id": "uroven-ii-upravlyaemoe-vypolnenie",
+  "text": "Уровень II. Управляемое выполнение",
+  "level": 3
+ },
+ {
+  "id": "uroven-iii-variativnoe-primenenie",
+  "text": "Уровень III. Вариативное применение",
+  "level": 3
+ },
+ {
+  "id": "uroven-iv-professionalnaya-samostoyatelnost",
+  "text": "Уровень IV. Профессиональная самостоятельность",
+  "level": 3
+ },
+ {
+  "id": "14-pedagogicheskaya-rol-oshibki-i-preduprezhdeniya-braka",
+  "text": "14. Педагогическая роль ошибки и предупреждения брака",
+  "level": 2
+ },
+ {
+  "id": "karta-analiza-tehnologicheskoy-oshibki",
+  "text": "Карта анализа технологической ошибки",
+  "level": 3
+ },
+ {
+  "id": "15-metodika-provedeniya-prakticheskogo-zanyatiya",
+  "text": "15. Методика проведения практического занятия",
+  "level": 2
+ },
+ {
+  "id": "etap-1-postanovka-professionalnoy-zadachi",
+  "text": "Этап 1. Постановка профессиональной задачи",
+  "level": 3
+ },
+ {
+  "id": "etap-2-analiz-tehnologicheskogo-resheniya",
+  "text": "Этап 2. Анализ технологического решения",
+  "level": 3
+ },
+ {
+  "id": "etap-3-demonstraciya-otvetstvennyh-operaciy",
+  "text": "Этап 3. Демонстрация ответственных операций",
+  "level": 3
+ },
+ {
+  "id": "etap-4-samostoyatelnaya-prakticheskaya-rabota",
+  "text": "Этап 4. Самостоятельная практическая работа",
+  "level": 3
+ },
+ {
+  "id": "etap-5-diagnostika-kachestva",
+  "text": "Этап 5. Диагностика качества",
+  "level": 3
+ },
+ {
+  "id": "etap-6-korrekciya-i-refleksiya",
+  "text": "Этап 6. Коррекция и рефлексия",
+  "level": 3
+ },
+ {
+  "id": "16-organizaciya-samostoyatelnoy-raboty",
+  "text": "16. Организация самостоятельной работы",
+  "level": 2
+ },
+ {
+  "id": "17-bezopasnost-kak-sostavlyayuschaya-masterstva",
+  "text": "17. Безопасность как составляющая мастерства",
+  "level": 2
+ },
+ {
+  "id": "18-sistema-ocenki-professionalnogo-progressa",
+  "text": "18. Система оценки профессионального прогресса",
+  "level": 2
+ },
+ {
+  "id": "urovni-sformirovannosti-masterstva",
+  "text": "Уровни сформированности мастерства",
+  "level": 3
+ },
+ {
+  "id": "19-nauchno-metodicheskaya-cennost-razrabotok-d-s-dronova",
+  "text": "19. Научно-методическая ценность разработок Д. С. Дронова",
+  "level": 2
+ },
+ {
+  "id": "19-1-prakticheskaya-napravlennost-professionalnogo-obrazovan",
+  "text": "19.1. Практическая направленность профессионального образования",
+  "level": 3
+ },
+ {
+  "id": "19-2-edinstvo-tehnologicheskoy-i-hudozhestvennoy-podgotovki",
+  "text": "19.2. Единство технологической и художественной подготовки",
+  "level": 3
+ },
+ {
+  "id": "19-3-postepennoe-uslozhnenie-uchebnyh-zadach",
+  "text": "19.3. Постепенное усложнение учебных задач",
+  "level": 3
+ },
+ {
+  "id": "19-4-znachenie-professionalnoy-diagnostiki",
+  "text": "19.4. Значение профессиональной диагностики",
+  "level": 3
+ },
+ {
+  "id": "19-5-formirovanie-kultury-bezopasnoy-professionalnoy-deyatel",
+  "text": "19.5. Формирование культуры безопасной профессиональной деятельности",
+  "level": 3
+ },
+ {
+  "id": "19-6-dokumentirovanie-otechestvennoy-yuvelirnoy-pedagogiki",
+  "text": "19.6. Документирование отечественной ювелирной педагогики",
+  "level": 3
+ },
+ {
+  "id": "20-vozmozhnosti-dalneyshego-razvitiya-metodiki",
+  "text": "20. Возможности дальнейшего развития методики",
+  "level": 2
+ },
+ {
+  "id": "21-zaklyuchenie",
+  "text": "21. Заключение",
+  "level": 2
+ },
+ {
+  "id": "spisok-istochnikov-i-literatury",
+  "text": "Список источников и литературы",
+  "level": 2
+ }
+]

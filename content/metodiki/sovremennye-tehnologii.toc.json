@@ -1,0 +1,237 @@
+[
+ {
+  "id": "1-vvedenie",
+  "text": "1. Введение",
+  "level": 2
+ },
+ {
+  "id": "2-cel-i-zadachi-issledovaniya",
+  "text": "2. Цель и задачи исследования",
+  "level": 2
+ },
+ {
+  "id": "3-razrabotka-uchebnogo-kursa-d-s-dronovym-kak-pedagogicheska",
+  "text": "3. Разработка учебного курса Д. С. Дроновым как педагогическая задача",
+  "level": 2
+ },
+ {
+  "id": "4-struktura-i-trudoemkost-uchebnoy-discipliny",
+  "text": "4. Структура и трудоёмкость учебной дисциплины",
+  "level": 2
+ },
+ {
+  "id": "5-znachenie-znaniy-o-sovremennyh-yuvelirnyh-materialah",
+  "text": "5. Значение знаний о современных ювелирных материалах",
+  "level": 2
+ },
+ {
+  "id": "5-1-cvetnoe-zoloto-kak-sredstvo-rasshireniya-hudozhestvennyh",
+  "text": "5.1. Цветное золото как средство расширения художественных возможностей",
+  "level": 3
+ },
+ {
+  "id": "5-2-perspektivnye-splavy-serebra",
+  "text": "5.2. Перспективные сплавы серебра",
+  "level": 3
+ },
+ {
+  "id": "5-3-sovremennye-metody-oblagorazhivaniya-kamney",
+  "text": "5.3. Современные методы облагораживания камней",
+  "level": 3
+ },
+ {
+  "id": "6-mehanizirovannye-operacii-kak-element-professionalnoy-komp",
+  "text": "6. Механизированные операции как элемент профессиональной компетентности",
+  "level": 2
+ },
+ {
+  "id": "6-1-lite-po-vyplavlyaemym-modelyam",
+  "text": "6.1. Литьё по выплавляемым моделям",
+  "level": 3
+ },
+ {
+  "id": "6-2-shtampovka-i-plasticheskaya-deformaciya",
+  "text": "6.2. Штамповка и пластическая деформация",
+  "level": 3
+ },
+ {
+  "id": "6-3-avtomatizirovannoe-izgotovlenie-cepochek",
+  "text": "6.3. Автоматизированное изготовление цепочек",
+  "level": 3
+ },
+ {
+  "id": "6-4-novye-sposoby-izgotovleniya-i-soedineniya-izdeliy",
+  "text": "6.4. Новые способы изготовления и соединения изделий",
+  "level": 3
+ },
+ {
+  "id": "6-5-sovremennye-otdelochnye-operacii",
+  "text": "6.5. Современные отделочные операции",
+  "level": 3
+ },
+ {
+  "id": "7-prakticheskoe-zadanie-1-sozdanie-splava-metallov",
+  "text": "7. Практическое задание № 1: создание сплава металлов",
+  "level": 2
+ },
+ {
+  "id": "7-1-pedagogicheskaya-znachimost-zadaniya",
+  "text": "7.1. Педагогическая значимость задания",
+  "level": 3
+ },
+ {
+  "id": "7-2-formirovanie-professionalnyh-umeniy",
+  "text": "7.2. Формирование профессиональных умений",
+  "level": 3
+ },
+ {
+  "id": "8-prakticheskoe-zadanie-2-izuchenie-vakuumnogo-litya",
+  "text": "8. Практическое задание № 2: изучение вакуумного литья",
+  "level": 2
+ },
+ {
+  "id": "8-1-obrazovatelnaya-rol-izucheniya-vakuumnogo-litya",
+  "text": "8.1. Образовательная роль изучения вакуумного литья",
+  "level": 3
+ },
+ {
+  "id": "8-2-svyaz-s-hudozhestvennym-proektirovaniem",
+  "text": "8.2. Связь с художественным проектированием",
+  "level": 3
+ },
+ {
+  "id": "9-formirovanie-professionalnyh-kompetenciy",
+  "text": "9. Формирование профессиональных компетенций",
+  "level": 2
+ },
+ {
+  "id": "9-1-ok-3-samorazvitie-i-tvorcheskiy-potencial",
+  "text": "9.1. ОК-3 — саморазвитие и творческий потенциал",
+  "level": 3
+ },
+ {
+  "id": "9-2-opk-6-rabota-s-sovremennym-oborudovaniem-i-materialami",
+  "text": "9.2. ОПК-6 — работа с современным оборудованием и материалами",
+  "level": 3
+ },
+ {
+  "id": "9-3-pk-4-ocenka-tehnologichnosti-i-organizaciya-professional",
+  "text": "9.3. ПК-4 — оценка технологичности и организация профессиональной деятельности",
+  "level": 3
+ },
+ {
+  "id": "10-metodicheskie-osobennosti-organizacii-obucheniya",
+  "text": "10. Методические особенности организации обучения",
+  "level": 2
+ },
+ {
+  "id": "10-1-problemnaya-lekciya",
+  "text": "10.1. Проблемная лекция",
+  "level": 3
+ },
+ {
+  "id": "10-2-lekciya-diskussiya",
+  "text": "10.2. Лекция-дискуссия",
+  "level": 3
+ },
+ {
+  "id": "10-3-lekciya-vizualizaciya",
+  "text": "10.3. Лекция-визуализация",
+  "level": 3
+ },
+ {
+  "id": "10-4-lekciya-s-zaplanirovannymi-oshibkami",
+  "text": "10.4. Лекция с запланированными ошибками",
+  "level": 3
+ },
+ {
+  "id": "10-5-analiz-konkretnoy-professionalnoy-situacii",
+  "text": "10.5. Анализ конкретной профессиональной ситуации",
+  "level": 3
+ },
+ {
+  "id": "11-integrirovannaya-model-professionalnogo-obucheniya-sovrem",
+  "text": "11. Интегрированная модель профессионального обучения современным технологиям",
+  "level": 2
+ },
+ {
+  "id": "etap-i-materialovedcheskaya-gramotnost",
+  "text": "Этап I. Материаловедческая грамотность",
+  "level": 3
+ },
+ {
+  "id": "etap-ii-tehnologicheskaya-orientirovka",
+  "text": "Этап II. Технологическая ориентировка",
+  "level": 3
+ },
+ {
+  "id": "etap-iii-prakticheskoe-osvoenie",
+  "text": "Этап III. Практическое освоение",
+  "level": 3
+ },
+ {
+  "id": "etap-iv-hudozhestvenno-tehnologicheskoe-proektirovanie",
+  "text": "Этап IV. Художественно-технологическое проектирование",
+  "level": 3
+ },
+ {
+  "id": "etap-v-professionalnaya-refleksiya",
+  "text": "Этап V. Профессиональная рефлексия",
+  "level": 3
+ },
+ {
+  "id": "12-metodika-ocenki-obrazovatelnyh-rezultatov",
+  "text": "12. Методика оценки образовательных результатов",
+  "level": 2
+ },
+ {
+  "id": "13-nauchno-metodicheskaya-cennost-razrabotki-d-s-dronova",
+  "text": "13. Научно-методическая ценность разработки Д. С. Дронова",
+  "level": 2
+ },
+ {
+  "id": "13-1-vklyuchenie-sovremennyh-proizvodstvennyh-znaniy-v-hudoz",
+  "text": "13.1. Включение современных производственных знаний в художественное образование",
+  "level": 3
+ },
+ {
+  "id": "13-2-svyaz-materialovedeniya-s-prakticheskoy-deyatelnostyu",
+  "text": "13.2. Связь материаловедения с практической деятельностью",
+  "level": 3
+ },
+ {
+  "id": "13-3-formirovanie-sistemnogo-ponimaniya-proizvodstva",
+  "text": "13.3. Формирование системного понимания производства",
+  "level": 3
+ },
+ {
+  "id": "13-4-orientaciya-na-professionalnuyu-samostoyatelnost",
+  "text": "13.4. Ориентация на профессиональную самостоятельность",
+  "level": 3
+ },
+ {
+  "id": "13-5-edinstvo-hudozhestvennyh-i-tehnologicheskih-trebovaniy",
+  "text": "13.5. Единство художественных и технологических требований",
+  "level": 3
+ },
+ {
+  "id": "13-6-znachenie-dlya-istorii-otechestvennogo-yuvelirnogo-obra",
+  "text": "13.6. Значение для истории отечественного ювелирного образования",
+  "level": 3
+ },
+ {
+  "id": "14-perspektivy-razvitiya-uchebnogo-kursa",
+  "text": "14. Перспективы развития учебного курса",
+  "level": 2
+ },
+ {
+  "id": "15-zaklyuchenie",
+  "text": "15. Заключение",
+  "level": 2
+ },
+ {
+  "id": "spisok-istochnikov-i-literatury",
+  "text": "Список источников и литературы",
+  "level": 2
+ }
+]

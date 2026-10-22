@@ -23,6 +23,8 @@ export interface Book {
   pdf: string;
   /** Текст взят из электронного оригинала (Word/PDF), а не распознан со скана */
   fromSource?: boolean;
+  /** Ссылка на научно-методический анализ книги */
+  analysis?: { href: string; label: string };
 }
 
 export const BOOKS: Book[] = [
@@ -50,6 +52,7 @@ export const BOOKS: Book[] = [
     ],
     cover: { src: "/images/books/socialno-kulturnyy-podhod-2015.jpg", width: 900, height: 1286 },
     pdf: "/docs/dronov-monografiya-2015.pdf",
+    analysis: { href: "/metodologiya/metodiki/monografiya-2015-analiz", label: "Научный анализ монографии" },
   },
   {
     slug: "istoricheskoe-svoeobrazie-2011",

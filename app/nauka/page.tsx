@@ -93,6 +93,9 @@ export default function SciencePage() {
                 <Link href="/nauka/avtoreferat" className="btn-ghost">
                   Автореферат
                 </Link>
+                <Link href="/metodologiya/metodiki/dissertaciya-2009-analiz" className="btn-ghost">
+                  Научный анализ диссертации
+                </Link>
                 <a href={D.pdf.dissertation} className="btn-ghost" target="_blank" rel="noopener">
                   PDF диссертации
                 </a>
