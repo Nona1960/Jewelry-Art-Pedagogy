@@ -1,0 +1,96 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { Toc } from "@/components/FullTextReader";
+import { doiUrl, getMethod, METHODS, METHODS_YEAR } from "@/lib/data/methods";
+import { loadMethod } from "@/lib/methodContent";
+
+type Props = { params: Promise<{ slug: string }> };
+
+export function generateStaticParams() {
+  return METHODS.filter((m) => m.slug).map((m) => ({ slug: m.slug! }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const m = getMethod(slug);
+  if (!m) return {};
+  const { meta } = loadMethod(slug);
+  return {
+    title: m.title ?? meta.title,
+    description: meta.annotation[0]?.slice(0, 300),
+  };
+}
+
+export default async function MethodPage({ params }: Props) {
+  const { slug } = await params;
+  const m = getMethod(slug);
+  if (!m) notFound();
+  const { html, toc, meta } = loadMethod(slug);
+  const title = m.title ?? meta.title;
+  const cite = `Дронов Д. С. ${title}. — Zenodo, ${METHODS_YEAR}. — DOI: ${m.doi}`;
+  return (
+    <article>
+      <header className="border-b border-line">
+        <div className="wrap py-12 sm:py-16">
+          <nav aria-label="Навигация" className="text-[14px] text-ink-soft">
+            <Link href="/metodologiya" className="link">
+              Методология
+            </Link>
+            <span className="mx-2">/</span>
+            <Link href="/metodologiya#metodiki" className="link">
+              Методики обучения
+            </Link>
+          </nav>
+          <p className="eyebrow mt-8">{m.course ?? "Методика обучения"}</p>
+          <h1 className="mt-4 max-w-5xl text-[34px] leading-[1.12] sm:text-[48px]">{title}</h1>
+          {meta.subtitle && <p className="mt-4 max-w-4xl font-display text-[22px] italic text-gold-deep">{meta.subtitle}</p>}
+          <div className="rule mt-6" />
+          <dl className="mt-8 grid max-w-5xl gap-x-8 gap-y-3 text-[15px] sm:grid-cols-[210px_1fr]">
+            <dt className="text-[12px] uppercase leading-relaxed tracking-[0.15em] text-gold-deep">Автор</dt>
+            <dd>Дронов Дмитрий Сергеевич</dd>
+            <dt className="text-[12px] uppercase leading-relaxed tracking-[0.15em] text-gold-deep">Публикация</dt>
+            <dd>
+              Zenodo, {METHODS_YEAR} ·{" "}
+              <a href={doiUrl(m.doi)} className="link" target="_blank" rel="noopener">
+                DOI: {m.doi}
+              </a>
+            </dd>
+            {meta.keywords && (
+              <>
+                <dt className="text-[12px] uppercase leading-relaxed tracking-[0.15em] text-gold-deep">Ключевые слова</dt>
+                <dd>{meta.keywords}</dd>
+              </>
+            )}
+          </dl>
+          {meta.annotation.length > 0 && (
+            <div className="mt-8 max-w-4xl space-y-3 text-[16px]">
+              <p className="eyebrow">Аннотация</p>
+              {meta.annotation.map((p) => (
+                <p key={p}>{p}</p>
+              ))}
+            </div>
+          )}
+          <div className="mt-8 max-w-4xl border-l-2 border-gold/60 bg-sand/30 px-4 py-3 text-[14px]">
+            <p className="font-serif text-[12px] uppercase tracking-[0.15em] text-gold-deep">Как ссылаться</p>
+            <p className="mt-1 select-all">{cite}</p>
+          </div>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a href={doiUrl(m.doi)} className="btn" target="_blank" rel="noopener">
+              Открыть в Zenodo
+            </a>
+            <Link href="/metodologiya#metodiki" className="btn-ghost">
+              Все методики
+            </Link>
+          </div>
+        </div>
+      </header>
+      <div className="wrap grid gap-12 py-14 lg:grid-cols-[280px_1fr] lg:gap-16">
+        <aside className="min-w-0 lg:sticky lg:top-28 lg:self-start">
+          <Toc toc={toc} />
+        </aside>
+        <div className="doc-html min-w-0 max-w-[50rem]" lang="ru" dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
+    </article>
+  );
+}

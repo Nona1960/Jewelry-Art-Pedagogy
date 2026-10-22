@@ -3,6 +3,7 @@ import Link from "next/link";
 import { PageHeader, PubList } from "@/components/ui";
 import { directions } from "@/lib/data/methodology";
 import { byNumbers } from "@/lib/data/bibliography";
+import { doiUrl, METHODS } from "@/lib/data/methods";
 
 export const metadata: Metadata = {
   title: "Методология",
@@ -62,6 +63,54 @@ export default function MethodologyPage() {
           ))}
         </div>
       </div>
+
+      <section id="metodiki" className="scroll-mt-24 border-t border-line bg-white/50">
+        <div className="wrap py-16">
+          <p className="eyebrow">Обновлённые авторские редакции курсов</p>
+          <h2 className="mt-3 text-[38px] sm:text-[46px]">Методики обучения ювелирному искусству</h2>
+          <div className="rule mt-5" />
+          <div className="mt-6 max-w-3xl space-y-4 text-[17px]">
+            <p>
+              Учебные программы и пособия по ключевым дисциплинам подготовки художников-ювелиров Дмитрий Дронов создал
+              самостоятельно в ходе преподавания в Высшей школе народных искусств. Здесь представлены их полностью
+              переработанные авторские редакции, опубликованные в открытом научном репозитории Zenodo с постоянными
+              идентификаторами DOI.
+            </p>
+          </div>
+          <ol className="mt-10 grid gap-px border border-line bg-line md:grid-cols-2">
+            {METHODS.map((m, i) => (
+              <li key={m.doi} className="flex flex-col bg-milk p-6">
+                <span className="font-display text-[28px] leading-none text-gold">{String(i + 1).padStart(2, "0")}</span>
+                {m.slug ? (
+                  <>
+                    <Link
+                      href={`/metodologiya/metodiki/${m.slug}`}
+                      className="mt-3 font-display text-[22px] leading-snug text-ink-deep hover:text-gold-deep"
+                    >
+                      {m.title}
+                    </Link>
+                    {m.course && <p className="mt-2 text-[14px] text-ink">{m.course}</p>}
+                  </>
+                ) : (
+                  <p className="mt-3 font-display text-[21px] leading-snug text-ink-deep" lang="en">
+                    {m.zenodoTitle}
+                  </p>
+                )}
+                <div className="mt-auto flex flex-wrap items-center gap-x-5 gap-y-2 pt-5 text-[14px]">
+                  {m.slug && (
+                    <Link href={`/metodologiya/metodiki/${m.slug}`} className="link">
+                      Полный текст
+                    </Link>
+                  )}
+                  <a href={doiUrl(m.doi)} className="link" target="_blank" rel="noopener">
+                    DOI: {m.doi}
+                  </a>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
     </>
   );
 }

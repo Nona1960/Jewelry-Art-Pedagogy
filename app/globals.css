@@ -170,7 +170,7 @@ p {
   vertical-align: middle;
 }
 .doc-html th,
-.doc-html tr:first-child td {
+.doc-html table:not(:has(thead)) tr:first-child td {
   background: rgb(233 217 184 / 0.45);
   font-weight: 700;
   color: #3e5372;
