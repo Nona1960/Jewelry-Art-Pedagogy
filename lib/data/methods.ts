@@ -24,7 +24,7 @@ export const METHOD_BLOCKS: MethodBlock[] = [
     id: "osnovaniya",
     num: "I",
     title: "Научные основания авторской системы",
-    lead: "Теоретико-методологическое ядро: педагогическая модель 2009 года, социокультурная концепция 2015 года и обобщающие методики формирования профессиональных компетенций.",
+    lead: "Теоретико-методологическое ядро: педагогическая модель 2009 года, социокультурная концепция 2015 года и обобщающая методика формирования профессиональных компетенций.",
   },
   {
     id: "materialy",
@@ -84,13 +84,6 @@ export const METHODS: Method[] = [
     doi: "10.5281/zenodo.23500383",
     zenodoTitle: "Dronov’s Integrated Competency Development Method for Jewelry Art Education",
   },
-  {
-    block: "osnovaniya",
-    kind: "general",
-    doi: "10.5281/zenodo.23503225",
-    zenodoTitle:
-      "Dronov’s Methodology for the Staged Development of Artistic and Design Thinking in Jewelry Art: Integrating Composition, Construction, and Technological Feasibility",
-  },
 
   // II. Материально-технологическая подготовка
   {
@@ -149,6 +142,17 @@ export const METHODS: Method[] = [
   },
   {
     block: "proektirovanie",
+    kind: "general",
+    slug: "proektnoe-myshlenie",
+    doi: "10.5281/zenodo.23503225",
+    zenodoTitle:
+      "Dronov’s Methodology for the Staged Development of Artistic and Design Thinking in Jewelry Art: Integrating Composition, Construction, and Technological Feasibility",
+    title:
+      "Авторская методология Д. С. Дронова поэтапного формирования художественно-проектного мышления в ювелирном искусстве",
+    course: "Художественное проектирование ювелирных изделий · сквозная методика",
+  },
+  {
+    block: "proektirovanie",
     kind: "course",
     slug: "ot-proekta-k-konstruktsii",
     doi: "10.5281/zenodo.23504790",
@@ -185,8 +189,12 @@ export const METHODS: Method[] = [
   {
     block: "masterstvo",
     kind: "course",
+    slug: "ispolnitelskoe-masterstvo",
     doi: "10.5281/zenodo.23501324",
     zenodoTitle: "Staged Development of Performance Mastery in Jewelry Art Education",
+    title:
+      "Поэтапное формирование исполнительского мастерства художников-ювелиров: интеграция технологической подготовки, художественного проектирования и критериальной оценки",
+    course: "Исполнительское мастерство · от изделий по образцу к собственному проекту",
   },
   {
     block: "masterstvo",

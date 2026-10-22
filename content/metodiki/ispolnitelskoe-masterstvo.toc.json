@@ -1,0 +1,197 @@
+[
+ {
+  "id": "1-vvedenie",
+  "text": "1. Введение",
+  "level": 2
+ },
+ {
+  "id": "2-problema-issledovaniya",
+  "text": "2. Проблема исследования",
+  "level": 2
+ },
+ {
+  "id": "3-cel-zadachi-i-metody-issledovaniya",
+  "text": "3. Цель, задачи и методы исследования",
+  "level": 2
+ },
+ {
+  "id": "4-struktura-ispolnitelskogo-masterstva-hudozhnika-yuvelira",
+  "text": "4. Структура исполнительского мастерства художника-ювелира",
+  "level": 2
+ },
+ {
+  "id": "4-1-materialovedcheskiy-komponent",
+  "text": "4.1. Материаловедческий компонент",
+  "level": 3
+ },
+ {
+  "id": "4-2-operacionno-tehnologicheskiy-komponent",
+  "text": "4.2. Операционно-технологический компонент",
+  "level": 3
+ },
+ {
+  "id": "4-3-hudozhestvenno-konstruktivnyy-komponent",
+  "text": "4.3. Художественно-конструктивный компонент",
+  "level": 3
+ },
+ {
+  "id": "4-4-kontrolno-analiticheskiy-komponent",
+  "text": "4.4. Контрольно-аналитический компонент",
+  "level": 3
+ },
+ {
+  "id": "4-5-samostoyatelno-proektirovochnyy-komponent",
+  "text": "4.5. Самостоятельно-проектировочный компонент",
+  "level": 3
+ },
+ {
+  "id": "5-osnovnaya-ideya-avtorskoy-metodiki",
+  "text": "5. Основная идея авторской методики",
+  "level": 2
+ },
+ {
+  "id": "6-soderzhanie-poetapnoy-prakticheskoy-podgotovki",
+  "text": "6. Содержание поэтапной практической подготовки",
+  "level": 2
+ },
+ {
+  "id": "6-1-nachalnyy-etap-tochnost-i-tehnologicheskaya-posledovatel",
+  "text": "6.1. Начальный этап: точность и технологическая последовательность",
+  "level": 3
+ },
+ {
+  "id": "6-2-etap-konstruktivnogo-uslozhneniya",
+  "text": "6.2. Этап конструктивного усложнения",
+  "level": 3
+ },
+ {
+  "id": "6-3-etap-tehnologicheskoy-integracii",
+  "text": "6.3. Этап технологической интеграции",
+  "level": 3
+ },
+ {
+  "id": "6-4-etap-osvoeniya-hudozhestvennyh-tehnik",
+  "text": "6.4. Этап освоения художественных техник",
+  "level": 3
+ },
+ {
+  "id": "6-5-etap-samostoyatelnogo-proektirovaniya",
+  "text": "6.5. Этап самостоятельного проектирования",
+  "level": 3
+ },
+ {
+  "id": "7-metodicheskie-razrabotki-prakticheskih-zadaniy",
+  "text": "7. Методические разработки практических заданий",
+  "level": 2
+ },
+ {
+  "id": "razrabotka-1-izgotovlenie-kulona-s-gluhoy-zakrepkoy-kaboshon",
+  "text": "Разработка № 1. Изготовление кулона с глухой закрепкой кабошона",
+  "level": 3
+ },
+ {
+  "id": "razrabotka-2-izgotovlenie-sereg-s-razlichnymi-vidami-zakrepk",
+  "text": "Разработка № 2. Изготовление серёг с различными видами закрепки камней",
+  "level": 3
+ },
+ {
+  "id": "razrabotka-3-izgotovlenie-kolca-s-faden-grizantnoy-zakrepkoy",
+  "text": "Разработка № 3. Изготовление кольца с фаден-гризантной закрепкой",
+  "level": 3
+ },
+ {
+  "id": "razrabotka-4-izgotovlenie-zhestkogo-brasleta-s-dekorativnymi",
+  "text": "Разработка № 4. Изготовление жёсткого браслета с декоративными элементами и замком",
+  "level": 3
+ },
+ {
+  "id": "razrabotka-5-izgotovlenie-izdeliya-s-goryachey-emalyu",
+  "text": "Разработка № 5. Изготовление изделия с горячей эмалью",
+  "level": 3
+ },
+ {
+  "id": "razrabotka-6-izgotovlenie-sereg-po-samostoyatelnomu-proektu",
+  "text": "Разработка № 6. Изготовление серёг по самостоятельному проекту",
+  "level": 3
+ },
+ {
+  "id": "8-tehnologicheskaya-karta-kak-sredstvo-obucheniya",
+  "text": "8. Технологическая карта как средство обучения",
+  "level": 2
+ },
+ {
+  "id": "9-metodika-preduprezhdeniya-tehnologicheskih-oshibok",
+  "text": "9. Методика предупреждения технологических ошибок",
+  "level": 2
+ },
+ {
+  "id": "10-kriterialnaya-ocenka-ispolnitelskogo-masterstva",
+  "text": "10. Критериальная оценка исполнительского мастерства",
+  "level": 2
+ },
+ {
+  "id": "urovni-sformirovannosti-masterstva",
+  "text": "Уровни сформированности мастерства",
+  "level": 3
+ },
+ {
+  "id": "11-organizaciya-samostoyatelnoy-raboty",
+  "text": "11. Организация самостоятельной работы",
+  "level": 2
+ },
+ {
+  "id": "12-pedagogicheskie-usloviya-realizacii",
+  "text": "12. Педагогические условия реализации",
+  "level": 2
+ },
+ {
+  "id": "13-vozmozhnosti-pedagogicheskoy-aprobacii",
+  "text": "13. Возможности педагогической апробации",
+  "level": 2
+ },
+ {
+  "id": "14-nauchno-metodicheskaya-i-prakticheskaya-znachimost",
+  "text": "14. Научно-методическая и практическая значимость",
+  "level": 2
+ },
+ {
+  "id": "15-zaklyuchenie",
+  "text": "15. Заключение",
+  "level": 2
+ },
+ {
+  "id": "metodicheskie-prilozheniya",
+  "text": "МЕТОДИЧЕСКИЕ ПРИЛОЖЕНИЯ",
+  "level": 2
+ },
+ {
+  "id": "prilozhenie-1-karta-professionalnogo-razvitiya-obuchayuscheg",
+  "text": "Приложение 1. Карта профессионального развития обучающегося",
+  "level": 2
+ },
+ {
+  "id": "prilozhenie-2-universalnaya-tehnologicheskaya-karta",
+  "text": "Приложение 2. Универсальная технологическая карта",
+  "level": 2
+ },
+ {
+  "id": "prilozhenie-3-list-analiza-tehnologicheskogo-defekta",
+  "text": "Приложение 3. Лист анализа технологического дефекта",
+  "level": 2
+ },
+ {
+  "id": "prilozhenie-4-individualnaya-diagnosticheskaya-karta",
+  "text": "Приложение 4. Индивидуальная диагностическая карта",
+  "level": 2
+ },
+ {
+  "id": "prilozhenie-5-voprosy-dlya-itogovoy-zaschity",
+  "text": "Приложение 5. Вопросы для итоговой защиты",
+  "level": 2
+ },
+ {
+  "id": "literatura",
+  "text": "Литература",
+  "level": 2
+ }
+]

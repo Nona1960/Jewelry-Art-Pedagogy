@@ -1,0 +1,227 @@
+[
+ {
+  "id": "1-vvedenie",
+  "text": "1. Введение",
+  "level": 2
+ },
+ {
+  "id": "2-problema-i-aktualnost-metodologii",
+  "text": "2. Проблема и актуальность методологии",
+  "level": 2
+ },
+ {
+  "id": "3-cel-zadachi-i-predmet-metodologii",
+  "text": "3. Цель, задачи и предмет методологии",
+  "level": 2
+ },
+ {
+  "id": "4-osnovnoy-metodologicheskiy-princip",
+  "text": "4. Основной методологический принцип",
+  "level": 2
+ },
+ {
+  "id": "5-struktura-avtorskoy-metodologii",
+  "text": "5. Структура авторской методологии",
+  "level": 2
+ },
+ {
+  "id": "etap-i-hudozhestvenno-issledovatelskiy",
+  "text": "Этап I. Художественно-исследовательский",
+  "level": 3
+ },
+ {
+  "id": "etap-ii-obrazno-plasticheskoy-transformacii",
+  "text": "Этап II. Образно-пластической трансформации",
+  "level": 3
+ },
+ {
+  "id": "etap-iii-variativnogo-kompozicionnogo-poiska",
+  "text": "Этап III. Вариативного композиционного поиска",
+  "level": 3
+ },
+ {
+  "id": "etap-iv-konstruktivnogo-modelirovaniya",
+  "text": "Этап IV. Конструктивного моделирования",
+  "level": 3
+ },
+ {
+  "id": "etap-v-tehnologicheskogo-obosnovaniya",
+  "text": "Этап V. Технологического обоснования",
+  "level": 3
+ },
+ {
+  "id": "etap-vi-hudozhestvenno-graficheskogo-predstavleniya",
+  "text": "Этап VI. Художественно-графического представления",
+  "level": 3
+ },
+ {
+  "id": "etap-vii-refleksivno-ekspertnoy-ocenki",
+  "text": "Этап VII. Рефлексивно-экспертной оценки",
+  "level": 3
+ },
+ {
+  "id": "6-princip-posledovatelnogo-uslozhneniya-proektnyh-zadach",
+  "text": "6. Принцип последовательного усложнения проектных задач",
+  "level": 2
+ },
+ {
+  "id": "pervyy-uroven-otdelnoe-izdelie",
+  "text": "Первый уровень. Отдельное изделие",
+  "level": 3
+ },
+ {
+  "id": "vtoroy-uroven-konstruktivno-slozhnoe-ukrashenie",
+  "text": "Второй уровень. Конструктивно сложное украшение",
+  "level": 3
+ },
+ {
+  "id": "tretiy-uroven-sistema-vzaimosvyazannyh-izdeliy",
+  "text": "Третий уровень. Система взаимосвязанных изделий",
+  "level": 3
+ },
+ {
+  "id": "chetvertyy-uroven-kompleksnoe-avtorskoe-proektirovanie",
+  "text": "Четвёртый уровень. Комплексное авторское проектирование",
+  "level": 3
+ },
+ {
+  "id": "7-metodika-preobrazovaniya-ornamenta-v-yuvelirnoe-izdelie",
+  "text": "7. Методика преобразования орнамента в ювелирное изделие",
+  "level": 2
+ },
+ {
+  "id": "7-1-rastitelnyy-ornament",
+  "text": "7.1. Растительный орнамент",
+  "level": 3
+ },
+ {
+  "id": "7-2-geometricheskiy-ornament",
+  "text": "7.2. Геометрический орнамент",
+  "level": 3
+ },
+ {
+  "id": "7-3-animalisticheskie-motivy",
+  "text": "7.3. Анималистические мотивы",
+  "level": 3
+ },
+ {
+  "id": "8-metodika-modulnogo-proektirovaniya",
+  "text": "8. Методика модульного проектирования",
+  "level": 2
+ },
+ {
+  "id": "algoritm-modulnogo-zadaniya",
+  "text": "Алгоритм модульного задания",
+  "level": 3
+ },
+ {
+  "id": "9-metodika-proektirovaniya-yuvelirnogo-garnitura",
+  "text": "9. Методика проектирования ювелирного гарнитура",
+  "level": 2
+ },
+ {
+  "id": "osnovnye-kriterii-garniturnosti",
+  "text": "Основные критерии гарнитурности",
+  "level": 3
+ },
+ {
+  "id": "10-integraciya-hudozhestvennogo-i-tehnologicheskogo-analiza",
+  "text": "10. Интеграция художественного и технологического анализа",
+  "level": 2
+ },
+ {
+  "id": "11-avtorskaya-sistema-metodicheskih-zadaniy",
+  "text": "11. Авторская система методических заданий",
+  "level": 2
+ },
+ {
+  "id": "12-metodicheskaya-razrabotka-1-ot-prirodnoy-formy-k-proektu-",
+  "text": "12. Методическая разработка № 1. «От природной формы к проекту кулона»",
+  "level": 2
+ },
+ {
+  "id": "13-metodicheskaya-razrabotka-2-modul-kak-osnova-yuvelirnogo-",
+  "text": "13. Методическая разработка № 2. «Модуль как основа ювелирного гарнитура»",
+  "level": 2
+ },
+ {
+  "id": "14-metodicheskaya-razrabotka-3-hudozhestvennaya-stilizaciya-",
+  "text": "14. Методическая разработка № 3. «Художественная стилизация в сложном гарнитуре»",
+  "level": 2
+ },
+ {
+  "id": "15-metodicheskaya-razrabotka-4-proektirovanie-hudozhestvenno",
+  "text": "15. Методическая разработка № 4. «Проектирование художественного предмета утилитарного назначения»",
+  "level": 2
+ },
+ {
+  "id": "16-metodika-pedagogicheskogo-soprovozhdeniya",
+  "text": "16. Методика педагогического сопровождения",
+  "level": 2
+ },
+ {
+  "id": "17-diagnostika-sformirovannosti-proektnogo-myshleniya",
+  "text": "17. Диагностика сформированности проектного мышления",
+  "level": 2
+ },
+ {
+  "id": "urovni-sformirovannosti",
+  "text": "Уровни сформированности",
+  "level": 3
+ },
+ {
+  "id": "18-pokazateli-professionalnoy-samostoyatelnosti",
+  "text": "18. Показатели профессиональной самостоятельности",
+  "level": 2
+ },
+ {
+  "id": "19-pedagogicheskaya-aprobaciya-metodologii",
+  "text": "19. Педагогическая апробация методологии",
+  "level": 2
+ },
+ {
+  "id": "20-nauchno-metodicheskaya-znachimost",
+  "text": "20. Научно-методическая значимость",
+  "level": 2
+ },
+ {
+  "id": "21-zaklyuchenie",
+  "text": "21. Заключение",
+  "level": 2
+ },
+ {
+  "id": "metodicheskie-prilozheniya",
+  "text": "МЕТОДИЧЕСКИЕ ПРИЛОЖЕНИЯ",
+  "level": 2
+ },
+ {
+  "id": "prilozhenie-1-universalnaya-karta-avtorskogo-proektirovaniya",
+  "text": "Приложение 1. Универсальная карта авторского проектирования",
+  "level": 2
+ },
+ {
+  "id": "prilozhenie-2-karta-sravneniya-proektnyh-variantov",
+  "text": "Приложение 2. Карта сравнения проектных вариантов",
+  "level": 2
+ },
+ {
+  "id": "prilozhenie-3-diagnosticheskaya-karta-proektnogo-myshleniya",
+  "text": "Приложение 3. Диагностическая карта проектного мышления",
+  "level": 2
+ },
+ {
+  "id": "prilozhenie-4-voprosy-dlya-zaschity-avtorskogo-proekta",
+  "text": "Приложение 4. Вопросы для защиты авторского проекта",
+  "level": 2
+ },
+ {
+  "id": "prilozhenie-5-pasport-metodologicheskoy-razrabotki",
+  "text": "Приложение 5. Паспорт методологической разработки",
+  "level": 2
+ },
+ {
+  "id": "rekomenduemaya-literatura",
+  "text": "Рекомендуемая литература",
+  "level": 2
+ }
+]

@@ -6,7 +6,7 @@ SITE='/home/claude/jewelry-art-pedagogy/content/metodiki'
 import os; os.makedirs(SITE, exist_ok=True)
 md=open(src,encoding='utf-8').read()
 title=re.search(r'^#\s+(.+)$',md,re.M).group(1).strip()
-sub=re.search(r'^\*\*(.+?)\*\*\s*$',md,re.M)
+sub=re.search(r'\A\s*#\s+.+\n\s*\n\*\*(.+?)\*\*\s*$',md,re.M)
 subtitle=sub.group(1).strip() if sub else ''
 ann=re.search(r'^##\s+Аннотация\s*\n(.*?)(?=^##\s)',md,re.M|re.S)
 annotation=[]; keywords=''
@@ -17,7 +17,7 @@ if ann:
         else: annotation.append(para)
     md=md.replace(ann.group(0),'')
 md=re.sub(r'^#\s+.+$','',md,count=1,flags=re.M)
-if sub: md=md.replace(sub.group(0),'',1)
+if sub: md=md.replace('**'+sub.group(1)+'**','',1)
 html=subprocess.run(['pandoc','-f','markdown','-t','html5','--wrap=none'],input=md,capture_output=True,text=True,check=True).stdout
 soup=BeautifulSoup(html,'html.parser')
 TR={'а':'a','б':'b','в':'v','г':'g','д':'d','е':'e','ё':'e','ж':'zh','з':'z','и':'i','й':'y','к':'k','л':'l','м':'m','н':'n','о':'o','п':'p','р':'r','с':'s','т':'t','у':'u','ф':'f','х':'h','ц':'c','ч':'ch','ш':'sh','щ':'sch','ъ':'','ы':'y','ь':'','э':'e','ю':'yu','я':'ya'}
