@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --milk: #faf8f3;
+  --ink: #526987;
+  --sand: #e9d9b8;
+  --gold: #b49a65;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--milk);
+  color: var(--ink);
+  font-family: "PT Serif", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+::selection {
+  background: var(--sand);
+  color: #3e5372;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  line-height: 1.15;
+  color: #3e5372;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto w-full max-w-page px-4 sm:px-8;
+  }
+  .eyebrow {
+    @apply font-serif text-[12px] uppercase tracking-[0.22em] text-gold-deep;
+  }
+  .rule {
+    @apply h-px w-16 bg-gold;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 border border-ink bg-ink px-6 py-3 font-serif text-[15px] tracking-wide text-white transition-colors hover:border-ink-deep hover:bg-ink-deep;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 border border-ink bg-transparent px-6 py-3 font-serif text-[15px] tracking-wide text-ink transition-colors hover:bg-ink hover:text-white;
+  }
+  .link {
+    @apply text-ink underline decoration-gold/60 decoration-1 underline-offset-4 transition-colors hover:text-ink-deep hover:decoration-gold;
+  }
+  .card {
+    @apply border border-line bg-white/60;
+  }
+  .prose-academic p {
+    @apply mb-5;
+  }
+}
